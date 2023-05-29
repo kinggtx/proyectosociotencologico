@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,106 +11,82 @@
       href="../images/Favicon.ico"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="../css/login-styles.css" />
+    <link rel="stylesheet" href="../css/animations.css" />
+    <link rel="stylesheet" href="../css/efect.css" />
+    <link rel="stylesheet" href="../css/login.css" />
     <script src="../Javascript/index.js"></script>
     <title>Login</title>
   </head>
+
   <body>
-    <main>
-      <img
-        src="../images//Favicon.ico"
-        alt="Logo CreativaPuntoUno.Ve"
-        class="logo"
-      />
-      <br /><br /><br />
-      <div class="total-container">
-        <header class="flex-father">
-          <div class="icon">
-            <div class="espacio"></div>
-            <img
-              src="../icons/user-svgrepo-com.svg"
-              alt="user"
-              class="user-svg"
-            />
-            <section>
-              <h1 class="text-title">Iniciar Sesión</h1>
-              <p class="text-p">Hola, Bienvenido de Vuelta...</p>
-            </section>
-            <div class="espacio2"></div>
-            <img
-              src="../icons/VenezuelaFlag.svg"
-              alt="Venezuela"
-              class="venezuelaFlag"
-            />
-            <img
-              src="../icons/arrow-bottom.svg"
-              alt="Flecha hacia abajo"
-              class="user-svg"
-            />
-          </div>
-        </header>
-
-        <br />
-
-        <article class="flex-father2">
-          <section class="content-login">
-            <div class="purble-box"><a href="#">Email</a></div>
-            <div class="white-box"><a href="#">Número Telef</a></div>
-          </section>
-
-          <br />
-
-          <section class="form-login">
-            <form action="">
-              <div class="form-floating mb-3">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="floatingInput"
-                  placeholder="name@example.com"
-                />
-                <label for="floatingInput">Correo Electrónico</label>
-              </div>
-              <div class="form-floating">
-                <input
-                  type="password"
-                  class="form-control"
-                  id="floatingPassword"
-                  placeholder="Password"
-                />
-                <label for="floatingPassword">Contraseña</label>
-              </div>
-
-              <br />
-              <h3 class="text-alert">
-                <a href=""><u>Olvido su Contraseña?</u></a>
-              </h3>
-
-              <div class="col-12 submit-container">
-                <button type="submit" class="btn btn-primary submit-button">
-                  <a href="../html/Principal.html">Entrar </a>
-                </button>
-              </div>
-            </form>
-          </section>
-
-          <br />
-          <section class="bottom-login">
-            <div class="linea-left"></div>
-            <h3 class="text-alert2">Iniciar Sesión Con</h3>
-            <div class="linea-right"></div>
-          </section>
-          <section class="bottom-login">
-            <a href="#g">
-              <img src="../icons/Google-Icon.svg" alt="Google" id="google" />
-              <h3 class="text-alert3">Google</h3>
-            </a>
-          </section>
-          <h3 class="text-alert4">
-            No Estas Registrado? <b><a href="#">Crea Una Cuenta</a></b>
-          </h3>
-        </article>
+    <!-- Cabecera -->
+    <header>
+      <div class="name-slogan">
+        <img
+          src="../images/creativapuntouno.png"
+          alt="Logo"
+          class="anim-logo"
+        />
+        <h1>
+          <span class="onecolor">Creativa</span
+          ><span class="twocolor">P</span>unto<span class="threecolor">U</span
+          >no
+        </h1>
       </div>
+    </header>
+
+    <main>
+      <section class="opacity">
+        <div class="container-login" id="login">
+          <form class="form2 card">
+            <div class="card_header">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path
+                  fill="currentColor"
+                  d="M4 15h2v5h12V4H6v5H4V3a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-6zm6-4V8l5 4-5 4v-3H2v-2h8z"
+                ></path>
+              </svg>
+              <h1 class="form_heading">Iniciar Sesión</h1>
+            </div>
+            <div class="field">
+              <label for="username">Usuario</label>
+              <input
+                class="input"
+                name="username"
+                type="text"
+                placeholder="Username"
+                id="username"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="password">Contraseña</label>
+              <input
+                class="input"
+                name="user_password"
+                type="password"
+                placeholder="Password"
+                id="password"
+                required
+              />
+            </div>
+            <div class="field into-user">
+              <button class="button">Entrar</button>
+
+              <p>
+                No Tienes Una Cuenta? -
+                <a href="./register.html"><b>Registrate Ahora</b></a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
   </body>
 </html>
