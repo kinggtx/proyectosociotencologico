@@ -36,26 +36,16 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px;
 }
 .position-two {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-input {
-  border: none;
-  border-radius: 10px;
-  margin: 5px 5px;
-  padding: 4px;
-  width: 390px;
-}
-textarea {
-  border: none;
-  border-radius: 10px;
-  margin: 5px 5px;
-  padding: 4px;
-}
-/*card*/
+/*cards*/
 .card {
   margin: 0 auto;
   display: grid;
@@ -67,4 +57,66 @@ textarea {
   background: var(--color4);
   border-radius: 40px 0 40px 0;
 }
-/* fincard */
+/* fincards */
+/*style form*/
+.form {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  width: 600px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+}
+
+.form .title {
+  color: royalblue;
+  font-size: 30px;
+  font-weight: 600px;
+  letter-spacing: -1px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form input {
+  outline: 0;
+  border: 1px solid rgb(219, 213, 213);
+  padding: 8px 14px;
+  border-radius: 8px;
+  width: 100%;
+  height: 50px;
+}
+
+.form textarea {
+  border-radius: 8px;
+  height: 100px;
+  width: 100%;
+  resize: none;
+  outline: 0;
+  padding: 8px 14px;
+  border: 1px solid rgb(219, 213, 213);
+}
+
+.form button {
+  align-self: flex-end;
+  padding: 8px;
+  outline: 0;
+  border: 0;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: royalblue;
+  color: #fff;
+  cursor: pointer;
+}   
+/*fin form*/
+/*iframe*/
+iframe{
+  border-radius: 10px;
+  border: white solid 5px;
+}
