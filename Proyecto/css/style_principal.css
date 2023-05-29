@@ -32,7 +32,7 @@ body {
 header {
   width: 100%;
   height: auto;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
   font-family: black-regular;
 }
@@ -42,8 +42,8 @@ header {
   justify-content: center;
 }
 .name-slogan > img {
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   border-radius: 100%;
 }
 .onecolor {
@@ -59,7 +59,7 @@ header {
   text-shadow: 1px 1px 1px var(--color3);
 }
 span {
-  font-size: 5rem;
+  font-size: 4 rem;
 }
 .background-new {
   background-color: white;
@@ -71,7 +71,7 @@ span {
   height: auto;
 }
 .font-backgroundtwo {
-  background-color: var(--color5);
+  background-color: white;
   /* filter: opacity(90%); */
   width: 100%;
   height: auto;
@@ -86,13 +86,17 @@ span {
 }
 .navbar > a {
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: black;
   font-family: righteous;
 }
 .navbar > a:hover {
   transition: 0.5s ease-in-out;
   color: var(--color2);
+}
+.modifiqued {
+  height: 80vh;
+  filter: opacity(90%);
 }
 .letter {
   display: flex;
@@ -104,6 +108,7 @@ span {
   position: absolute;
   color: black;
   font-family: black-regular;
+  z-index: 2;
 }
 .letter > a {
   font-size: 2rem;
@@ -122,13 +127,17 @@ span {
   background-color: black;
 }
 h2 {
-  font-size: 2.5rem;
+  text-align: justify;
+  font-size: 3rem;
   font-family: black-regular;
-  text-shadow: 1px 1px 5px black;
+  color: white;
+  text-shadow: 5px 5px 5px var(--color3);
+  font-family: black-regular;
 }
 h2 > span {
   font-size: 2.5rem;
   color: var(--color2);
+  text-shadow: 2px 2px 2px black;
 }
 .div-one {
   display: flex;
@@ -146,7 +155,7 @@ h2 > span {
   margin: 60px;
 }
 .at-1 > p {
-  text-shadow: 1px 1px 5px black;
+  color: black;
   font-size: 1.2rem;
   text-align: justify;
 }
@@ -174,6 +183,7 @@ h2 > span {
 }
 .one-article {
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   color: white;
   padding: 20px;
@@ -223,6 +233,7 @@ h2 > span {
   transform: scale(150%);
 }
 .desing-footer {
+  align-content: center;
 }
 .desing-footer > p {
   text-align: justify;
