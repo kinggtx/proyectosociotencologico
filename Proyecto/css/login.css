@@ -35,7 +35,9 @@ header {
   position: fixed;
   top: 0;
 }
-
+a{
+  text-decoration: none;
+}
 .name-slogan {
   display: flex;
   flex-direction: column;
