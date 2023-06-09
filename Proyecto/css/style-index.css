@@ -25,6 +25,7 @@
 body {
   background-color: var(--color-one);
   font-family: montserrat;
+  scroll-behavior: smooth;
 }
 h1 {
   font-family: tt-chocolate;
@@ -122,7 +123,7 @@ nav > a:hover {
 .position-services {
   display: flex;
   justify-content: space-around;
-    padding: 50px;
+  padding: 50px;
 }
 .card-service {
   display: flex;
@@ -132,6 +133,107 @@ nav > a:hover {
   text-align: center;
   font-family: montserrat-semibolt;
 }
-.card-service>p{
-    text-align: center;
+.card-service > p {
+  text-align: justify;
+  width: 200px;
 }
+.content-three {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  justify-content: space-around;
+  align-items: center;
+}
+.objet-one {
+  font-family: montserrat-extrabold;
+  font-size: 2rem;
+  text-align: justify;
+}
+.objet-two {
+  display: flex;
+  flex-direction: column;
+}
+.objet-two > article > h4 {
+  font-size: 2rem;
+}
+.objet-two > article > h4 > span {
+  color: #820000;
+  font-size: 4rem;
+  font-family: montserrat-extrabold;
+}
+.objet-two > article > p {
+  width: 400px;
+  text-align: justify;
+}
+footer {
+  max-width: 100%;
+  height: 60vh;
+  background-image: url(../images/Prototipo\ de\ ordenador\ web\ para\ app\ móvil\ moderna\ azul\ y\ violeta4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  color: var(--color-one);
+}
+footer > h2 {
+  text-align: center;
+  font-family: montserrat-extrabold;
+}
+footer > p {
+  margin: 0 auto;
+  text-align: center;
+  width: 800px;
+}
+footer > h3 {
+  font-family: montserrat-semibold;
+  text-align: center;
+}
+.content-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+}
+.section-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+}
+.section-one>ul>li{
+    margin: 5px;
+}
+.section-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  padding: 20px;
+}
+.section-two > input{
+font-size: 1rem;
+  font-family: montserrat;
+  border: none;
+  margin: 5px;
+  width: 400px;
+  height: 30px;
+  border-radius: 5px;
+}
+textarea{
+    border-radius: 5px;
+    border: none;
+}
+.section-two > button {
+  background-color: var(--color-four);
+  color: var(--color-one);
+  margin-top: 10px;
+  padding: 5px;
+  margin-left: 300px;
+  width: auto;
+  padding: 5px;
+  height: auto;
+  border: none;
+  border-radius: 10px;
+}
+
