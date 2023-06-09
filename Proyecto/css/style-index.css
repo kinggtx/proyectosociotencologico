@@ -123,7 +123,8 @@ nav > a:hover {
 .position-services {
   display: flex;
   justify-content: space-around;
-  padding: 50px;
+  padding: 10px;
+  margin: 0px;
 }
 .card-service {
   display: flex;
@@ -143,7 +144,7 @@ nav > a:hover {
   width: 100%;
   height: auto;
   justify-content: space-around;
-  align-items: center;
+  align-items: center;  
 }
 .objet-one {
   font-family: montserrat-extrabold;
@@ -153,6 +154,7 @@ nav > a:hover {
 .objet-two {
   display: flex;
   flex-direction: column;
+  padding: 20px;
 }
 .objet-two > article > h4 {
   font-size: 2rem;
