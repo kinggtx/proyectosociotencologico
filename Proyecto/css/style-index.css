@@ -141,7 +141,8 @@ header > nav {
   margin-right: 20px;
   flex-direction: row;
 }
-nav > a {
+nav > a,
+label {
   display: flex;
   align-items: center;
   text-align: center;
@@ -167,6 +168,7 @@ nav > a:hover {
   height: 100vh;
   background-image: url(../images/Prototipo\ de\ ordenador\ web\ para\ app\ móvil\ moderna\ azul\ y\ violeta1.png);
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   background-position: 0 -120px;
 }
@@ -207,13 +209,23 @@ nav > a:hover {
   font-family: montserrat-extrabold;
   font-size: 2.5rem;
 }
+.content-two>p{
+  text-align: center;
+  font-size: 1.5rem;
+}
+.content-two>p>a{
+  text-decoration: none;
+  font-family: montserrat-extrabold;
+  color: var(--color-five);
+}
 .position-services {
   display: flex;
   justify-content: space-around;
-  padding: 10px;
-  margin: 0px;
+  padding: 5px;
+  margin: 5px;
 }
 .card-service {
+  margin: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -223,7 +235,8 @@ nav > a:hover {
 }
 .card-service > p {
   text-align: justify;
-  width: 200px;
+  text-overflow: clip;
+  width: 300px;
 }
 .content-three {
   display: flex;
@@ -257,10 +270,8 @@ nav > a:hover {
 }
 footer {
   max-width: 100%;
-  height: 60vh;
-  background-image: url(../images/Prototipo\ de\ ordenador\ web\ para\ app\ móvil\ moderna\ azul\ y\ violeta4.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: auto;
+  background-color: var(--color-five);
   padding: 20px;
   color: var(--color-one);
 }
@@ -277,6 +288,23 @@ footer > h3 {
   font-family: montserrat-semibold;
   text-align: center;
 }
+.social-network {
+  display: flex;
+  height: auto;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.social-network > a {
+  margin: 0 10px 0 10px;
+}
+.objet-line{
+  height: 2px;
+  width: 400px;
+  background-color: var(--color-one);
+  border-radius: 100px;
+}
 .content-footer {
   display: flex;
   flex-direction: row;
@@ -292,6 +320,7 @@ footer > h3 {
 }
 .section-one > ul > li {
   margin: 5px;
+  padding: 1px;
 }
 .section-two {
   display: flex;
