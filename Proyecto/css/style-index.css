@@ -1,3 +1,4 @@
+/* Feuentes Externas */
 @font-face {
   font-family: montserrat;
   src: url(../fonts/montserrat/Montserrat-VariableFont_wght.ttf);
@@ -14,6 +15,8 @@
   font-family: tt-chocolate;
   src: url(../fonts/05.woff);
 }
+
+/* Estilos Default */
 :root {
   --color-one: #ffffff;
   --color-two: #eb1101;
@@ -21,27 +24,33 @@
   --color-four: #000000;
   --color-five: #820000;
   --bg-color: #fff1fd;
+  box-sizing: border-box;
 }
 body {
   background-color: var(--color-one);
   font-family: montserrat;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
-h1 {
-  font-family: tt-chocolate;
-  font-size: 2.5rem;
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
 }
+
+/* Etiqueta Para El Header */
 header {
-  width: auto;
+  max-width: 100%;
   height: 10vh;
   padding: 10px;
   margin-top: 15px;
   display: flex;
-  flex-direction: row;
   align-items: center;
   align-content: center;
   justify-content: space-between;
 }
+
+/* Estilos Para El Titulo Y Logo De La Compañia */
 .image-title {
   margin-left: 40px;
   display: flex;
@@ -52,6 +61,12 @@ header {
   width: 70px;
   height: 70px;
 }
+h1 {
+  font-family: tt-chocolate;
+  font-size: 2.5rem;
+}
+
+/* Estilos Para El Switch */
 /* switch settings 👇 */
 .ui-switch {
   /* switch */
@@ -135,10 +150,10 @@ header {
   width: 0;
   height: 0;
 }
-/*Fin switch*/
+
+/* Estilos Para La Etiqueta Nav */
 header > nav {
   display: flex;
-  margin-right: 20px;
   flex-direction: row;
 }
 nav > a,
@@ -159,8 +174,27 @@ label {
 nav > a:hover {
   background-color: var(--color-five);
   color: white;
-  transition: 1s ease-in;
+  transform: scale(1.1);
+  transition: 300ms ease-in;
 }
+nav button {
+  border: none;
+  padding: 7px;
+  border-radius: 20px;
+  font-family: montserrat;
+  color: var(--color-four);
+  background-color: var(--bg-color);
+  cursor: pointer;
+  transition: background-color 300ms ease-in;
+}
+nav button:hover {
+  color: var(--color-one);
+  background-color: var(--color-five);
+  transform: scale(1.1);
+  transition: 300ms ease-in;
+}
+
+/* Estilos Para La Etiqueta Contenedora Del 1er Contenido */
 .content-one {
   display: flex;
   justify-content: flex-start;
@@ -168,17 +202,18 @@ nav > a:hover {
   height: 100vh;
   background-image: url(../images/Prototipo\ de\ ordenador\ web\ para\ app\ móvil\ moderna\ azul\ y\ violeta1.png);
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
   background-position: 0 -120px;
 }
+
+/* Estilos Para El Contenido Del 1er Contenido */
 .content-text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   align-content: center;
   font-size: 2rem;
-  margin-top: 100px;
+  margin-top: 2rem;
   margin-left: 50px;
 }
 .content-text > h2 {
@@ -186,10 +221,11 @@ nav > a:hover {
   font-size: 3rem;
   text-align: start;
 }
-.content-text > a {
+.content-text a {
   display: flex;
   align-items: center;
   align-content: center;
+  justify-content: center;
   text-align: center;
   font-size: 1.5rem;
   font-family: montserrat;
@@ -197,9 +233,15 @@ nav > a:hover {
   text-decoration: none;
   background-color: var(--color-five);
   border-radius: 20px;
-  width: 150px;
+  width: 180px;
   padding: 20px;
+  transition: background-color 300ms ease;
 }
+.content-text a:hover {
+  background-color: #eac500;
+}
+
+/* Estilos Para La Caja Contenedora Del 2do Contenido */
 .content-two {
   width: 100%;
   height: 80vh;
@@ -209,21 +251,29 @@ nav > a:hover {
   font-family: montserrat-extrabold;
   font-size: 2.5rem;
 }
-.content-two>p{
+.content-two > p {
   text-align: center;
   font-size: 1.5rem;
 }
-.content-two>p>a{
+.content-two > p > a {
   text-decoration: none;
   font-family: montserrat-extrabold;
   color: var(--color-five);
+  transition: color 300ms ease;
 }
+.content-two > p > a:hover {
+  color: #eac500;
+}
+
+/* Estilos Para La Etiqueta Contenedora de las Cards De Servicios 2do Contenido */
 .position-services {
   display: flex;
   justify-content: space-around;
   padding: 5px;
   margin: 5px;
 }
+
+/* Estilos Para Las Card de Servicios 2do Contenido */
 .card-service {
   margin: 10px;
   display: flex;
@@ -238,6 +288,14 @@ nav > a:hover {
   text-overflow: clip;
   width: 300px;
 }
+.card-service svg {
+  transition: transform 300ms ease;
+}
+.card-service svg:hover {
+  transform: scale(1.1);
+}
+
+/* Estilos Para La Caja Contenedora Del 3er Contenido */
 .content-three {
   display: flex;
   flex-direction: row;
@@ -246,11 +304,15 @@ nav > a:hover {
   justify-content: space-around;
   align-items: center;
 }
+
+/* Estilos Parte Izquierda del 3er Contenido */
 .objet-one {
   font-family: montserrat-extrabold;
   font-size: 2rem;
   text-align: justify;
 }
+
+/* Estilos Parte Derecha del 3er Contenido */
 .objet-two {
   display: flex;
   flex-direction: column;
@@ -268,6 +330,18 @@ nav > a:hover {
   width: 400px;
   text-align: justify;
 }
+/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+.compromise {
+  animation: into-right 700ms ease both;
+}
+.person {
+  animation: into-right 700ms ease 700ms both;
+}
+.privacity {
+  animation: into-right 700ms ease 1400ms both;
+}
+
+/* Estilos Para La Etiqueta Footer Y Su Contenido Principal */
 footer {
   max-width: 100%;
   height: auto;
@@ -284,27 +358,15 @@ footer > p {
   text-align: center;
   width: 800px;
 }
-footer > h3 {
-  font-family: montserrat-semibold;
-  text-align: center;
-}
-.social-network {
-  display: flex;
-  height: auto;
-  width: auto;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-.social-network > a {
-  margin: 0 10px 0 10px;
-}
-.objet-line{
+
+/* Estilos Linea Separadora de Las Redes Sociales */
+.objet-line {
   height: 2px;
   width: 400px;
   background-color: var(--color-one);
   border-radius: 100px;
 }
+/* Contenido Etiqueta Contenedora Del Footer */
 .content-footer {
   display: flex;
   flex-direction: row;
@@ -312,6 +374,8 @@ footer > h3 {
   align-content: center;
   align-items: center;
 }
+
+/* Estilos Parte Izquierda Del Footer Con los Datos */
 .section-one {
   display: flex;
   flex-direction: column;
@@ -322,6 +386,8 @@ footer > h3 {
   margin: 5px;
   padding: 1px;
 }
+
+/* Estilos Etiqueta Contenedora del Form */
 .section-two {
   display: flex;
   flex-direction: column;
@@ -329,28 +395,54 @@ footer > h3 {
   align-content: center;
   padding: 20px;
 }
-.section-two > input {
+
+/* Estilos Para El Area de Contacto */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+form input {
   font-size: 1rem;
   font-family: montserrat;
   border: none;
   margin: 5px;
-  width: 400px;
-  height: 30px;
+  width: 100%;
+  height: 2rem;
   border-radius: 5px;
+  padding-left: 1rem;
 }
-textarea {
-  border-radius: 5px;
-  border: none;
-}
-.section-two > button {
+form button {
   background-color: var(--color-four);
   color: var(--color-one);
-  margin-top: 10px;
-  padding: 5px;
-  margin-left: 300px;
-  width: auto;
-  padding: 5px;
+  margin-top: 5px;
+  padding: 0.8rem;
+  width: 40%;
   height: auto;
   border: none;
+  cursor: pointer;
   border-radius: 10px;
+  transition: background-color 400ms ease-in-out;
+  font-family: montserrat-extrabold;
+}
+form button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+/* Estilos Area De Las Redes Sociales */
+.social-network {
+  display: flex;
+  height: auto;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.social-network > a {
+  margin: 0 10px 0 10px;
+  transition: transform 400ms ease;
+}
+.social-network a:hover {
+  transform: scale(1.1);
 }
