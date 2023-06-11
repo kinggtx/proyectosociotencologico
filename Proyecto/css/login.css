@@ -204,9 +204,19 @@ h3 a:hover {
 }
 form{
   padding-top: 50px ;
-  max-width: 70%;
+  max-width: 70%; 
 }
-
-svg{
-  border-radius: 100px;
+.social-network{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.social-network>a{
+  margin: 0 10px;
+  text-decoration: none;
+  transition: transform .2s .500ms ease-in-out ;
+}
+.social-network>a:hover{
+  transform: scale(110%);
 }
