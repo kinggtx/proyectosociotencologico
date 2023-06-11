@@ -24,7 +24,6 @@
   --color-four: #000000;
   --color-five: #820000;
   --bg-color: #fff1fd;
-  box-sizing: border-box;
 }
 body {
   background-color: var(--color-one);
@@ -199,9 +198,8 @@ nav button:hover {
   display: flex;
   justify-content: flex-start;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
 }
-
 /* Estilos Para El Contenido Del 1er Contenido */
 .content-text {
   display: flex;
@@ -239,8 +237,9 @@ nav button:hover {
 
 /* Estilos Para La Caja Contenedora Del 2do Contenido */
 .content-two {
-  width: 100%;
-  height: 80vh;
+  margin: 0 auto;
+  max-width: 80%;
+  height: auto;
 }
 .content-two > h2 {
   text-align: center;
@@ -251,15 +250,7 @@ nav button:hover {
   text-align: center;
   font-size: 1.5rem;
 }
-.content-two > p > a {
-  text-decoration: none;
-  font-family: montserrat-extrabold;
-  color: var(--color-five);
-  transition: color 300ms ease;
-}
-.content-two > p > a:hover {
-  color: #eac500;
-}
+
 
 /* Estilos Para La Etiqueta Contenedora de las Cards De Servicios 2do Contenido */
 .position-services {
@@ -267,6 +258,7 @@ nav button:hover {
   justify-content: space-around;
   padding: 5px;
   margin: 5px;
+  gap: 20px;
 }
 
 /* Estilos Para Las Card de Servicios 2do Contenido */
@@ -441,4 +433,31 @@ form button:hover {
 }
 .social-network a:hover {
   transform: scale(1.1);
+}
+/*estilos del enlace para el blog*/
+.content-blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: auto;
+}
+.content-blog > h2 {
+  font-family: montserrat-extrabold;
+  font-size: 2.5rem;
+  margin: 0;
+}
+.content-blog > p {
+  font-size: 1.5rem;
+}
+
+.content-blog> p > a {
+  text-decoration: none;
+  font-family: montserrat-extrabold;
+  color: var(--color-five);
+  transition: color 300ms ease;
+}
+.content-blog > p > a:hover {
+  color: #eac500;
 }
