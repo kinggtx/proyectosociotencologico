@@ -28,7 +28,7 @@ body {
   font-family: montserrat;
   scroll-behavior: smooth;
   overflow-x: hidden;
-  background-color: var(--color-five);  
+  background-color: var(--color-five);
 }
 /* Estilos Etiqueta Main */
 main {
@@ -77,7 +77,7 @@ a {
   transition: color 500ms ease;
   font-family: var(--Montserrat);
 }
- a:hover {
+a:hover {
   color: var(--color-three);
 }
 /* Estilos Login Container */
@@ -89,7 +89,7 @@ a {
 .input-container form {
   width: 90%;
   height: auto;
-  margin: 2rem auto 0;
+  margin: 0 auto 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -168,7 +168,8 @@ label {
   outline: none;
   border: thin #0f0 solid;
 }
-/* Estilos Input Telefono */
+
+/* Estilos Input Teléfono */
 .tlfno {
   width: 50%;
   height: 1.5rem;
@@ -231,7 +232,7 @@ label {
   border: thin solid #0f0;
 }
 /* Login */
-.login{
+.login {
   margin: 0.7rem auto 0.5rem;
   border: none;
   background-color: var(--color-five);
@@ -245,9 +246,17 @@ label {
   animation: into-left 700ms ease 3500ms both;
   font-family: var(--Montserrat-SemBold);
 }
-svg{
+.login:hover {
+  background-color: var(--color-three);
+  transition: all 300ms ease;
+}
+svg {
   border-radius: 100px;
 }
-form{
+form {
   max-width: 80%;
+}
+form a {
+  color: var(--color-five);
+  font-family: var(--Montserrat-SemBold);
 }
