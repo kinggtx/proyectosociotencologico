@@ -46,12 +46,7 @@ main {
   background-color: var(--color-five);
 }
 .tlf {
-  text-align: center;
-  width: 50%;
-  height: 70vh;
-  color: var(--color-one);
-  border: medium solid var(--color-one);
-  background-color: #424743;
+  max-height: 100vh;
   animation: into-left 700ms ease both;
 }
 /* Estilos Sección 2 */

@@ -47,12 +47,7 @@ main {
   order: 2; /* Si desea volver a poner el teléfono a la izquierda borre esto :D, no dañe eñ resto del código. GRACIAS... <3 */
 }
 .tlf {
-  text-align: center;
-  width: 50%;
-  height: 70vh;
-  color: var(--color-one);
-  border: medium solid var(--color-one);
-  background-color: #424743;
+    max-height: 100vh;
   animation: into-right 700ms ease both;
 }
 /* Estilos Sección 2 */
