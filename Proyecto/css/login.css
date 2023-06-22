@@ -27,7 +27,6 @@ body {
   font-family: var(--Montserrat);
   scroll-behavior: smooth;
   overflow-x: hidden;
-  
 }
 /* Estilos Etiqueta Main */
 main {
@@ -44,10 +43,15 @@ main {
   justify-content: center;
   border-right: medium solid var(--color-one);
   background-color: var(--color-five);
+  overflow: hidden;
 }
 .tlf {
-  max-height: 100vh;
+  max-height: 95vh;
   animation: into-left 700ms ease both;
+}
+.tlf svg {
+  width: auto;
+  height: 100%;
 }
 /* Estilos Sección 2 */
 .seccion2 {
@@ -58,7 +62,6 @@ main {
 .header {
   width: 100%;
   height: auto;
-  
 }
 h1 {
   text-align: center;
@@ -75,7 +78,6 @@ h1 {
   width: 100%;
   height: 100vh;
   background-color: #ffffff;
-  
 }
 .input-container form {
   width: 90%;
@@ -174,7 +176,7 @@ label {
   animation: into-right 700ms ease 1400ms both;
   font-family: var(--Montserrat-SemBold);
 }
-.login>a{
+.login > a {
   text-decoration: none;
   font-size: 1.1rem;
   color: var(--color-one);
@@ -197,21 +199,21 @@ h3 a {
 h3 a:hover {
   color: var(--color-two);
 }
-form{
-  padding-top: 50px ;
-  max-width: 70%; 
+form {
+  padding-top: 50px;
+  max-width: 70%;
 }
-.social-network{
+.social-network {
   display: flex;
   align-items: center;
   align-content: center;
   justify-content: center;
 }
-.social-network>a{
+.social-network a {
   margin: 0 10px;
   text-decoration: none;
-  transition: transform .2s .500ms ease-in-out ;
 }
-.social-network>a:hover{
-  transform: scale(110%);
+.social-network a:hover {
+  transform: scale(1.1);
+  transition: 300ms ease-in-out;
 }
