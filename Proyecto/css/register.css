@@ -47,12 +47,17 @@ main {
   order: 2; /* Si desea volver a poner el teléfono a la izquierda borre esto :D, no dañe eñ resto del código. GRACIAS... <3 */
 }
 .tlf {
-    max-height: 100vh;
+  max-height: 95vh;
   animation: into-right 700ms ease both;
+}
+.tlf svg {
+  width: auto;
+  height: 100%;
 }
 /* Estilos Sección 2 */
 .seccion2 {
   width: 50%;
+  max-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -89,9 +94,7 @@ a:hover {
   flex-direction: column;
   align-items: center;
 }
-hr {
-  width: 70%;
-}
+
 label {
   color: #0007;
   align-self: flex-start;
@@ -247,9 +250,6 @@ label {
 }
 svg {
   border-radius: 100px;
-}
-form {
-  max-width: 80%;
 }
 form a {
   color: var(--color-five);

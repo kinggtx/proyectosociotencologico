@@ -18,3 +18,13 @@
     opacity: 1;
   }
 }
+@keyframes into-repeat {
+  0% {
+    opacity: 0;
+    transform: translate(400%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
