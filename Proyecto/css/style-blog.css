@@ -1,0 +1,125 @@
+/* Feuentes Externas */
+@font-face {
+  font-family: montserrat;
+  src: url(../fonts/montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: montserrat-extrabold;
+  src: url(../fonts/montserrat/static/Montserrat-ExtraBold.ttf);
+}
+@font-face {
+  font-family: montserrat-semibolt;
+  src: url(../fonts/montserrat/static/Montserrat-SemiBold.ttf);
+}
+@font-face {
+  font-family: tt-chocolate;
+  src: url(../fonts/05.woff);
+}
+
+/* Estilos Default */
+:root {
+  --color-one: #ffffff;
+  --color-two: #eb1101;
+  --color-three: #eac500;
+  --color-four: #000000;
+  --color-five: #820000;
+  --bg-color: #f2f6f8;
+}
+html {
+  box-sizing: border-box;
+   scroll-behavior: smooth;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  font-family: montserrat;
+ 
+  overflow-x: hidden;
+}
+.blog {
+  max-width: 100%;
+  height: auto;
+}
+.blog > article > h1 {
+  padding: 2rem;
+  font-family: montserrat-extrabold;
+  text-align: center;
+}
+.cards-content {
+  max-width: 100%;
+  height: auto;
+}
+.position-card-1 {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+/* desing cards */
+.card {
+  width: 250px;
+  height: 350px;
+  background: white;
+  border-radius: 5px;
+  transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+.shadow {
+  box-shadow: inset 0 -2em 2em rgba(0, 0, 0, 0.1), 0 0 0 1px rgb(190, 190, 190),
+    0.2em 0.2em .5em rgba(0, 0, 0, 0.3);
+}
+/*Position content-cards */
+.img-title{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+}
+.text{
+  width: 100%;
+  height: 80%;
+}
+.icon{
+  width: 3rem;
+}
+.slogan{
+  font-family: montserrat-extrabold;
+  max-width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 10rem;
+}
+.slogan>article>h2{
+  margin: 5px;
+  font-size: 4.5rem;
+}
+.position-1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.position-2{
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+}
+.position-3{
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: flex-end;
+}
