@@ -1,37 +1,5 @@
-/* Fuentes Del login */
-@font-face {
-  font-family: montserrat;
-  src: url(../fonts/montserrat/Montserrat-VariableFont_wght.ttf);
-}
-@font-face {
-  font-family: montserrat-extrabold;
-  src: url(../fonts/montserrat/static/Montserrat-ExtraBold.ttf);
-}
-@font-face {
-  font-family: montserrat-semibold;
-  src: url(../fonts/montserrat/static/Montserrat-SemiBold.ttf);
-}
-
-/* Estilos Por Defecto & Variables */
-:root {
-  --color-one: #ffffff;
-  --color-two: #eb1101;
-  --color-three: #eac500;
-  --color-four: #000000;
-  --color-five: #820000;
-  --bg-color: #fff1fd;
-  --Montserrat-ExtBold: montserrat-extrabold;
-  --Montserrat-SemBold: montserrat-semibold;
-  --Montserrat: montserrat;
-}
-body {
-  font-family: montserrat;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-  background-color: var(--color-five);
-}
 /* Estilos Etiqueta Main */
-main {
+.main-register {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -65,19 +33,19 @@ main {
   width: 100%;
   height: auto;
 }
-h1 {
+.title-register {
   text-align: center;
   color: var(--color-five);
   font-family: var(--Montserrat-ExtBold);
   font-size: 2.5rem;
 }
 
-a {
+.link-register {
   color: var(--color-four);
   transition: color 500ms ease;
   font-family: var(--Montserrat);
 }
-a:hover {
+.link-register:hover {
   color: var(--color-three);
 }
 /* Estilos Login Container */
@@ -95,7 +63,7 @@ a:hover {
   align-items: center;
 }
 
-label {
+.label-for-register {
   color: #0007;
   align-self: flex-start;
   margin-left: 4rem;
@@ -248,10 +216,10 @@ label {
   background-color: var(--color-three);
   transition: all 300ms ease;
 }
-svg {
+.svg-register {
   border-radius: 100px;
 }
-form a {
+.form-register> a {
   color: var(--color-five);
   font-family: var(--Montserrat-SemBold);
 }
