@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style-reset.css" />
-    <link rel="stylesheet" href="../css/register.css" />
-    <link rel="stylesheet" href="../css/animations.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+
     <link
       rel="shortcut icon"
       href="../images/Favicon.ico"
@@ -15,12 +15,13 @@
     <title>Registro de usuario</title>
   </head>
   <body>
-    <main>
+    <main class="main-register">
       <article class="seccion1">
         <div class="tlf">
           <?xml version="1.0" standalone="no"?>
           <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
           <svg
+            class="svg-register"
             version="1.0"
             xmlns="http://www.w3.org/2000/svg"
             width="900.000000pt"
@@ -53,8 +54,8 @@
       <article class="seccion2">
         <div class="header"></div>
         <section class="input-container">
-          <form action="">
-            <h1>Crear cuenta</h1>
+          <form action="" class="form-register">
+            <h1 class="title-register">Crear cuenta</h1>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="100"
@@ -67,7 +68,7 @@
                 d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm0 5.996V14H3s-1 0-1-1 1-4 6-4c.564 0 1.077.038 1.544.107a4.524 4.524 0 0 0-.803.918A10.46 10.46 0 0 0 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h5ZM9 13a1 1 0 0 1 1-1v-1a2 2 0 1 1 4 0v1a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-2Zm3-3a1 1 0 0 0-1 1v1h2v-1a1 1 0 0 0-1-1Z"
               />
             </svg>
-            <label for="name"> Usuario: </label>
+            <label for="name" class="lanel-for-register"> Usuario: </label>
             <input
               type="text"
               id="name"
@@ -75,7 +76,9 @@
               placeholder="Tu nombre"
               required
             />
-            <label for="correo"> Correo Electrónico: </label>
+            <label for="correo" class="lanel-for-register">
+              Correo Electrónico:
+            </label>
             <input
               type="email"
               id="correo"
@@ -83,7 +86,7 @@
               placeholder="Tucorreo@email.com"
               required
             />
-            <label for="tlfno"> Teléfono: </label>
+            <label for="tlfno" class="lanel-for-register"> Teléfono: </label>
             <input
               type="tel"
               id="tlfno"
@@ -91,7 +94,9 @@
               placeholder="+58 ### #### ####"
               required
             />
-            <label for="contraseña"> Contraseña: </label>
+            <label for="contraseña" class="lanel-for-register">
+              Contraseña:
+            </label>
             <input
               type="password"
               id="contraseña"
@@ -101,7 +106,7 @@
             />
             <button class="login">Registrarse</button>
             <h3>¿Ya tienes cuenta?</h3>
-            <a href="./login.html">Inicia sesion Aqui</a>
+            <a href="./login.html" class="link-register">Inicia sesion Aqui</a>
           </form>
         </section>
       </article>

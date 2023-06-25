@@ -1,36 +1,6 @@
-/* Fuentes Del login */
-@font-face {
-  font-family: montserrat;
-  src: url(../fonts/montserrat/Montserrat-VariableFont_wght.ttf);
-}
-@font-face {
-  font-family: montserrat-extrabold;
-  src: url(../fonts/montserrat/static/Montserrat-ExtraBold.ttf);
-}
-@font-face {
-  font-family: montserrat-semibold;
-  src: url(../fonts/montserrat/static/Montserrat-SemiBold.ttf);
-}
 
-/* Estilos Por Defecto & Variables */
-:root {
-  --color-one: #ffffff;
-  --color-two: #eb1101;
-  --color-three: #eac500;
-  --color-four: #000000;
-  --color-five: #820000;
-  --bg-color: #fff1fd;
-  --Montserrat-ExtBold: montserrat-extrabold;
-  --Montserrat-SemBold: montserrat-semibold;
-  --Montserrat: montserrat;
-}
-body {
-  font-family: montserrat;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-}
 /* Estilos Etiqueta Main */
-main {
+.main-login {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -50,7 +20,7 @@ main {
   max-height: 95vh;
   animation: into-left 700ms ease both;
 }
-.tlf svg {
+.tlf> svg {
   width: auto;
   height: 100%;
 }
@@ -60,11 +30,15 @@ main {
   display: flex;
   flex-direction: column;
 }
-h1 {
+.title-login {
   text-align: center;
   color: var(--color-five);
+  font-family: var(--Montserrat-ExtraBold);
+}
+.subtitle-sec2 {
+  text-align: center;
+  color: var(--color-one);
   font-family: var(--Montserrat-ExtBold);
-  font-size: 1.5rem;
 }
 /* Estilos Login Container */
 .input-container {
@@ -72,25 +46,24 @@ h1 {
   height: 100vh;
   background-color: #ffffff;
 }
-.input-container form {
+.input-container >.form-login {
   width: 90%;
-  height: 90%;
+  height: auto;
   margin: 2rem auto 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
-hr {
+.hr-login {
   width: 70%;
 }
-label {
+.label-login {
   color: #0007;
   align-self: flex-start;
   margin-left: 4rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: var(--Montserrat);
 }
 /* Estilos Input Mail */
@@ -107,7 +80,7 @@ label {
   animation: into-right 700ms ease both;
 }
 .mail::placeholder {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #0006;
   padding-left: 0.4rem;
   font-family: var(--Montserrat);
@@ -124,6 +97,37 @@ label {
   outline: none;
   border: thin solid #0f0;
 }
+/* Estilos Input Contraseña */
+.password {
+  width: 50%;
+  height: 1.5rem;
+  font-size: 1.1rem;
+  padding: 0.2rem;
+  padding-left: 0.5rem;
+  border: none;
+  border: thin solid #0007;
+  border-radius: 7px;
+  color: var(--color-four);
+  animation: into-right 700ms ease 700ms both;
+}
+.password::placeholder {
+  font-size: 1.1rem;
+  color: #0006;
+  padding-left: 0.4rem;
+  font-family: var(--Montserrat);
+}
+.password:focus {
+  outline: none;
+  border: thin solid #820000;
+}
+.password:focus:valid {
+  outline: none;
+  border: thin solid #0f0;
+}
+.password:valid {
+  outline: none;
+  border: thin solid #0f0;
+}
 /* Login */
 .login {
   margin: 0.7rem auto 0.5rem;
@@ -131,28 +135,52 @@ label {
   background-color: var(--color-five);
   color: var(--color-one);
   padding: 10px;
-  padding-right: 30px;
-  padding-left: 30px;
   font-size: 1.1rem;
   border-radius: 10px;
   cursor: pointer;
-  font-weight: 700;
+  font-weight: bold;
   transition: background-color 700ms ease;
-  animation: into-right 700ms ease 700ms both;
+  animation: into-right 700ms ease 1400ms both;
   font-family: var(--Montserrat-SemBold);
+}
+.login > a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: var(--color-one);
 }
 .login:hover {
   background-color: var(--color-two);
 }
 /* Estilos Finales */
-.alert-sms {
-  color: #0008;
-  text-align: center;
-  font-family: var(--Montserrat);
-  letter-spacing: -1px;
-  animation: into-right 700ms ease 1400ms both;
+.sub-title-three-login {
   font-size: 1rem;
+  text-align: center;
+  font-family: var(--Montserrat-ExtBold);
 }
-svg {
-  border-radius: 100px;
+.sub-title-three-login a {
+  color: var(--color-five);
+  transition: color 400ms ease;
+  animation: into-right 700ms ease 2100ms both;
+  font-family: var(--Montserrat);
+}
+.sub-title-three-login a:hover {
+  color: var(--color-two);
+}
+.form-login {
+  padding-top: 50px;
+  max-width: 70%;
+}
+.social-network {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.social-network a {
+  margin: 0 10px;
+  text-decoration: none;
+}
+.social-network a:hover {
+  transform: scale(1.1);
+  transition: 300ms ease-in-out;
 }
