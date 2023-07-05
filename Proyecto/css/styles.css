@@ -630,6 +630,11 @@ label {
   align-content: center;
   flex-direction: row;
 }
+.img-title>img{
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+}
 .text {
   width: 100%;
   height: auto;
