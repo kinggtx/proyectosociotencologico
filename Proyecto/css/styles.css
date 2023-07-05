@@ -190,9 +190,8 @@ body {
 }
 .header {
   max-width: 100%;
-  height: 5%;
-  padding: 10px;
-  margin-top: 0px;
+  max-height: 50px;
+  margin-top: 10px;
   display: flex;
   align-items: center;
   align-content: center;
@@ -275,7 +274,6 @@ label {
   margin-left: 50px;
 }
 .content-text > h2 {
-  overflow: hidden;
   font-family: montserrat-extrabold;
   font-size: 3rem;
   text-align: start;
@@ -329,35 +327,38 @@ label {
   color: #eac500;
 }
 /* Cards Modificadas */
-.section2 {
-  width: 100%;
-  height: auto;
-}
-.content-two2 {
-  margin-top: 3rem;
-  width: 85%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
+.section {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+.content-two {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
   justify-content: center;
 }
 .title-sec2 {
+  display: flex;
   font-size: 3rem;
   text-align: center;
-  margin-bottom: 6rem;
-  margin-top: 3rem;
   font-family: montserrat-extrabold;
   color: #000;
 }
 .card-modify {
-  width: 20%;
-  height: auto;
-  position: relative;
+  margin-top: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  width: 300px;
+  height: 280px;
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0rem 0rem 2rem 0.3rem #0003;
@@ -420,8 +421,9 @@ label {
 /* Estilos Para La Caja Contenedora Del 3er Contenido */
 .content-three {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  width: 100%;
+  max-width: 100%;
   height: auto;
   justify-content: space-around;
   align-items: center;
@@ -500,6 +502,7 @@ label {
 /* Estilos Etiqueta Contenedora del Form */
 .section-two {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   align-content: center;
@@ -588,71 +591,82 @@ label {
 .social-network a:hover {
   transform: scale(1.1);
 }
-/*---------------------------------------------------  ESTILOS DEL BLOG ---------------------------------------*/
-.blog {
+/*----------- ESTILOS DEL BLOG ------------------------*/
+              /* cards blog*/
+.blog{
   max-width: 100%;
   height: auto;
-}
-.blog > article > h1 {
-  padding: 2rem;
-  font-family: montserrat-extrabold;
-  text-align: center;
-}
-.cards-content {
-  max-width: 100%;
-  height: auto;
-}
-.position-card-1 {
-  max-width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-  flex-wrap: wrap;
-  margin: 1rem;
-}
-.position-card-2{
-  max-width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-/* desing cards */
-.card {
-  width: 290px;
-  height: 400px;
-  background: white;
-  border-radius: 5px;
-  transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   display: flex;
   flex-direction: column;
-  padding: 1.5rem;
 }
-
-/*Position content-cards */
-.img-title {
+.title-blog{
+  text-align: center;
+  font-family: Montserrat-ExtraBold;
+  font-size: 3rem;
+  padding: 0;
+  margin: 0;
+}
+.position-card-1{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  align-content: center;
-  flex-direction: row;
+  margin-bottom: 300px;
 }
-.img-title > img {
-  width: 80px;
-  height: 80px;
-  border-radius: 100%;
+.card{
+  width: 280px;
+  height: 350px;
+  border-radius: 10px;
+  position: relative;
+  margin-top: 200px;
 }
-.text {
+.color-top-card{
+  margin: 0;
+  position: absolute;
+  border-radius: 20px 20px 0 0;
+  background-color: var(--color-five);
   width: 100%;
+  height: 35%;
+  top: 0;
+  opacity: .8;
+}
+.content-card{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center; 
   height: auto;
 }
-.icon {
-  width: 3rem;
+.position-img-card-blog{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-.slogan {
+.img-card-blog{
+  position: relative;
+  object-fit: cover;
+}
+.img-card-blog>img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 10px solid white;
+}
+.text-person-blog{
+  font-size: 1.5rem;
+  margin: 15px 0;
+  text-align: center;
+}
+.text-card-blog{
+  padding: 5px;
+  text-align: justify;
+}
+              /* fin cards blog*/
+  .slogan {
   font-family: montserrat-extrabold;
   max-width: 100%;
   height: 80vh;
@@ -660,7 +674,7 @@ label {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  padding: 10rem;
+  padding: 10px;
 }
 .slogan > article > h2 {
   border-left: 10px groove var(--color-five);
@@ -1386,6 +1400,7 @@ label {
 /*----------------------componentes------------------------------*/
 /*main tipo canvas*/
 .positions-menu-of-content {
+  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -1393,20 +1408,19 @@ label {
   max-width: 80%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: flex-start;
+  align-content: center;
+  justify-content: flex-start;
 }
 .title-text {
-  text-align: start;
-  margin: 1rem;
+  margin-left: 90px;
   font-size: 2rem;
 }
 .main {
   box-shadow: 0.1px 1px 0.3px black;
-  width: 20%;
+  max-width: 200px;
   max-height: 100vh;
   flex-direction: column;
-  padding: 2rem;
   position: sticky;
   top: 0;
 }
