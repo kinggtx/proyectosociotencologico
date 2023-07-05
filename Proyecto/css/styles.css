@@ -40,7 +40,9 @@ html {
 *::before {
   box-sizing: inherit;
 }
-img,svg,video {
+img,
+svg,
+video {
   max-width: 100%;
   height: auto;
 }
@@ -634,7 +636,7 @@ label {
   align-content: center;
   flex-direction: row;
 }
-.img-title>img{
+.img-title > img {
   width: 80px;
   height: 80px;
   border-radius: 100%;
@@ -759,28 +761,29 @@ label {
 
 /* Estilos Categorías */
 /*----------------------EStilos para las cards generales-------------------------------*/
-                        /* estilos Desing-card*/
-.desing-card{
+/* estilos Desing-card*/
+.desing-card {
   font-family: Montserrat-ExtraBold;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height:auto;
+  height: auto;
   width: 280px;
   position: relative;
+  margin-bottom: 20px;
 }
-.card-desing-download-svg{
+.card-desing-download-svg {
   position: absolute;
   bottom: 50%;
   display: none;
 }
-.desing-card-img>img{
+.desing-card-img > img {
   width: 256px;
   object-fit: contain;
   border-radius: 10px;
 }
-.desing-card-text{
+.desing-card-text {
   display: flex;
   width: 256px;
   height: 50px;
@@ -788,28 +791,20 @@ label {
   align-items: center;
   justify-content: flex-start;
 }
-.desing-log-creativa{
+.desing-log-creativa {
   width: 50px;
   height: 50px;
   margin-right: 10px;
 }
-.desing-card:hover .desing-card-img{
-  opacity: .1;
-  transition: .5s ease-in-out;
+.desing-card:hover .desing-card-img {
+  opacity: 0.1;
+  transition: 0.5s ease-in-out;
 }
-.desing-card:hover .card-desing-download-svg{
+.desing-card:hover .card-desing-download-svg {
   display: initial;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
   opacity: 1;
 }
-
-
-
-
-
-
-
-
 
 /* -----------------------Estilos Categoría Pendones--------- */
 
