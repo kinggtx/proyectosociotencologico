@@ -801,7 +801,7 @@ label {
 /* -----------------------Estilos Categoría Pendones--------- */
 
 .card-pendones:nth-child(odd) {
-  width: 55%;
+  width: 40%;
   height: 350px;
   margin: 3rem 1rem;
   border-radius: 1rem;
@@ -1394,7 +1394,6 @@ label {
   max-height: 100vh;
   flex-direction: column;
   padding: 2rem;
-  position: static;
   position: sticky;
   top: 0;
 }
