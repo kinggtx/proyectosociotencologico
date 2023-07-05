@@ -40,6 +40,10 @@ html {
 *::before {
   box-sizing: inherit;
 }
+img,svg,video {
+  max-width: 100%;
+  height: auto;
+}
 
 /******************** Components  ************************/
 /*Cabecera-Menudenavegacion-Tarjetas*/
@@ -754,54 +758,58 @@ label {
 }
 
 /* Estilos Categorías */
-
-.card-cat {
-  width: 27%;
-  height: auto;
-  margin: 3rem 1rem;
-  border-radius: 1rem;
-  overflow: hidden;
-  /* box-shadow: 0.1rem 0.1rem 2rem 0.05rem #0003; */
-}
-.card-cat:hover {
-  transform: scale(1.02);
-  opacity: 0.8;
-  transition: 400ms ease;
-}
-.card-cat:hover .button-card {
-  opacity: 1;
-  transition: 400ms ease;
-}
-.content-container {
+/*----------------------EStilos para las cards generales-------------------------------*/
+                        /* estilos Desing-card*/
+.desing-card{
+  font-family: Montserrat-ExtraBold;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  height:auto;
+  width: 280px;
+  position: relative;
 }
-.img-card {
-  width: 100%;
-  height: auto;
+.card-desing-download-svg{
+  position: absolute;
+  bottom: 50%;
+  display: none;
+}
+.desing-card-img>img{
+  width: 256px;
   object-fit: contain;
+  border-radius: 10px;
 }
-.description-card {
-  font-size: 0.9rem;
-  text-align: left;
-  font-family: var(--montserrat);
-  margin: 0;
-  padding: 0.2rem;
+.desing-card-text{
+  display: flex;
+  width: 256px;
+  height: 50px;
+  text-align: center;
+  align-items: center;
+  justify-content: flex-start;
 }
-.button-card {
-  font-family: var(--montserrat);
-  font-size: 1.1rem;
-  opacity: 0;
-  border: none;
-  background-color: transparent;
-  color: var(--color-five);
-  padding: 0.2rem;
-  cursor: pointer;
-  font-weight: 800;
-  margin: 0.3rem;
+.desing-log-creativa{
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
 }
+.desing-card:hover .desing-card-img{
+  opacity: .1;
+  transition: .5s ease-in-out;
+}
+.desing-card:hover .card-desing-download-svg{
+  display: initial;
+  transition: .5s ease-in-out;
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
 
 /* -----------------------Estilos Categoría Pendones--------- */
 
@@ -1054,7 +1062,8 @@ label {
 }
 .header {
   width: 100%;
-  height: auto;
+  height: 80px;
+  padding-top: 20px;
 }
 .title-register {
   text-align: center;
