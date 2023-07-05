@@ -775,6 +775,7 @@ label {
   height: auto;
   width: 280px;
   position: relative;
+  margin-bottom: 20px;
 }
 .card-desing-download-svg {
   position: absolute;
