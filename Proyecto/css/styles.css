@@ -682,7 +682,6 @@ label {
   width: 95%;
   height: auto;
   display: flex;
-  
 }
 .row {
   width: 100%;
@@ -757,19 +756,19 @@ label {
 /* Estilos Categorías */
 
 .card-cat {
-  width: 20%;
-  height: 350px;
+  width: 27%;
+  height: auto;
   margin: 3rem 1rem;
   border-radius: 1rem;
   overflow: hidden;
-  box-shadow: 0.1rem 0.1rem 2rem 0.05rem #0003;
+  /* box-shadow: 0.1rem 0.1rem 2rem 0.05rem #0003; */
 }
 .card-cat:hover {
   transform: scale(1.02);
   opacity: 0.8;
   transition: 400ms ease;
 }
-.card-cat:hover .price-card {
+.card-cat:hover .button-card {
   opacity: 1;
   transition: 400ms ease;
 }
@@ -781,25 +780,33 @@ label {
 }
 .img-card {
   width: 100%;
-  height: 190px;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
 }
 .description-card {
-  padding: 0.7rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-align: left;
   font-family: var(--montserrat);
-  margin-bottom: 0;
+  margin: 0;
+  padding: 0.2rem;
 }
-.price-card {
+.button-card {
   font-family: var(--montserrat);
+  font-size: 1.1rem;
   opacity: 0;
+  border: none;
+  background-color: transparent;
+  color: var(--color-five);
+  padding: 0.2rem;
+  cursor: pointer;
+  font-weight: 800;
+  margin: 0.3rem;
 }
 
 /* -----------------------Estilos Categoría Pendones--------- */
 
 .card-pendones:nth-child(odd) {
-  width: 55%;
+  width: 40%;
   height: 350px;
   margin: 3rem 1rem;
   border-radius: 1rem;
@@ -822,7 +829,7 @@ label {
   opacity: 0.8;
   transition: 400ms ease;
 }
-.card-pendones:hover .price-card {
+.card-pendones:hover .button-card {
   opacity: 1;
   transition: 400ms ease;
 }
@@ -1387,12 +1394,13 @@ label {
   font-size: 2rem;
 }
 .main {
-  box-shadow: .1px 1px .3px black;
+  box-shadow: 0.1px 1px 0.3px black;
   width: 20%;
   max-height: 100vh;
   flex-direction: column;
   padding: 2rem;
-  position: static;
+  position: sticky;
+  top: 0;
 }
 .overflow {
   overflow-y: scroll;
