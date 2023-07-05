@@ -48,7 +48,7 @@ video {
 }
 
 /******************** Components  ************************/
-/*Cabecera-Menudenavegacion-Tarjetas*/
+
 
 /*Checkbox de modo dark*/
 .ui-switch {
@@ -800,6 +800,7 @@ label {
   position: relative;
   margin-bottom: 20px;
 }
+
 .card-desing-download-svg {
   position: absolute;
   bottom: 50%;
@@ -823,7 +824,8 @@ label {
   height: 50px;
   margin-right: 10px;
 }
-.desing-card:hover .desing-card-img {
+.desing-card:hover .desing-card-img,
+.desing-card-2:hover .desing-card-img-2{
   opacity: 0.1;
   transition: 0.5s ease-in-out;
 }
@@ -832,37 +834,38 @@ label {
   transition: 0.5s ease-in-out;
   opacity: 1;
 }
+.desing-card-2 {
+  font-family: Montserrat-ExtraBold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  width: 400px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.desing-card-text-2 {
+  display: flex;
+  width: 400px;
+  height: 50px;
+  align-items: center;
+  margin: 10;
+  justify-content: flex-start;
+}
+.desing-card-text-2>span{
+  margin-left: 10px;
+}
+.desing-card-img-2>img{
+  width: 400px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.desing-log-creativa-2 {
+  width: 50px;
+  height: 50px;
+}
 
-/* -----------------------Estilos Categoría Pendones--------- */
-
-.card-pendones:nth-child(odd) {
-  width: 40%;
-  height: 350px;
-  margin: 3rem 1rem;
-  border-radius: 1rem;
-  overflow: hidden;
-  box-shadow: 0.1rem 0.1rem 2rem 0.05rem #0003;
-}
-.card-pendones:nth-child(even) {
-  width: 25%;
-  height: 350px;
-  margin: 3rem 1rem;
-  border-radius: 1rem;
-  overflow: hidden;
-  box-shadow: 0.1rem 0.1rem 2rem 0.05rem #0003;
-}
-.card-pendones:nth-child(even) .img-card {
-  height: 220px;
-}
-.card-pendones:hover {
-  transform: scale(1.02);
-  opacity: 0.8;
-  transition: 400ms ease;
-}
-.card-pendones:hover .button-card {
-  opacity: 1;
-  transition: 400ms ease;
-}
 /* -------------------------login-styles------------------*/
 
 /* Estilos Etiqueta Main */
