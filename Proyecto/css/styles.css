@@ -49,7 +49,6 @@ video {
 
 /******************** Components  ************************/
 
-
 /*Checkbox de modo dark*/
 .ui-switch {
   /* switch */
@@ -214,9 +213,8 @@ body {
   font-size: 2rem;
   margin-left: 0.7rem;
 }
-
 /* Estilos Para Nav-bar */
-.header > .nav-bar {
+.header > .navbar {
   display: flex;
   flex-direction: row;
 }
@@ -275,11 +273,12 @@ label {
   margin-top: 2rem;
   margin-left: 50px;
 }
-.title-one{
+.title-one {
   font-family: montserrat-extrabold;
   font-size: 4.5rem;
   text-align: center;
   border-bottom: 5px solid var(--color-five);
+  border-top: 5px solid var(--color-five);
   border-radius: 10px;
   padding: 20px;
 }
@@ -596,35 +595,35 @@ label {
   transform: scale(1.1);
 }
 /*----------- ESTILOS DEL BLOG ------------------------*/
-              /* cards blog*/
-.blog{
+/* cards blog*/
+.blog {
   max-width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
 }
-.title-blog{
+.title-blog {
   text-align: center;
   font-family: Montserrat-ExtraBold;
   font-size: 3rem;
   padding: 0;
   margin: 0;
 }
-.position-card-1{
+.position-card-1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   margin-bottom: 300px;
 }
-.card{
+.card {
   width: 280px;
   height: 350px;
   border-radius: 10px;
   position: relative;
   margin-top: 200px;
 }
-.color-top-card{
+.color-top-card {
   margin: 0;
   position: absolute;
   border-radius: 20px 20px 0 0;
@@ -632,17 +631,17 @@ label {
   width: 100%;
   height: 35%;
   top: 0;
-  opacity: .8;
+  opacity: 0.8;
 }
-.content-card{
+.content-card {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-content: center; 
+  align-content: center;
   height: auto;
 }
-.position-img-card-blog{
+.position-img-card-blog {
   width: 100%;
   height: auto;
   position: absolute;
@@ -650,27 +649,27 @@ label {
   align-items: center;
   flex-direction: column;
 }
-.img-card-blog{
+.img-card-blog {
   position: relative;
   object-fit: cover;
 }
-.img-card-blog>img{
+.img-card-blog > img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   border: 10px solid white;
 }
-.text-person-blog{
+.text-person-blog {
   font-size: 1.5rem;
   margin: 15px 0;
   text-align: center;
 }
-.text-card-blog{
+.text-card-blog {
   padding: 5px;
   text-align: justify;
 }
-              /* fin cards blog*/
-  .slogan {
+/* fin cards blog*/
+.slogan {
   font-family: montserrat-extrabold;
   max-width: 100%;
   height: 80vh;
@@ -828,7 +827,7 @@ label {
   margin-right: 10px;
 }
 .desing-card:hover .desing-card-img,
-.desing-card-2:hover .desing-card-img-2{
+.desing-card-2:hover .desing-card-img-2 {
   opacity: 0.1;
   transition: 0.5s ease-in-out;
 }
@@ -856,10 +855,10 @@ label {
   margin: 10;
   justify-content: flex-start;
 }
-.desing-card-text-2>span{
+.desing-card-text-2 > span {
   margin-left: 10px;
 }
-.desing-card-img-2>img{
+.desing-card-img-2 > img {
   width: 400px;
   object-fit: contain;
   border-radius: 10px;
