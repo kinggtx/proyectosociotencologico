@@ -132,6 +132,9 @@
     }
     .main-login{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
     }
     .seccion1{
         display: none;
@@ -148,6 +151,7 @@
     }
     .form-login>input{
         width: 200px;
+        justify-content: center;
         text-align: center;
     }
     .sub-title-three-login{
