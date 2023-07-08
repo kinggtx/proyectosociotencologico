@@ -1108,10 +1108,11 @@ label {
   font-size: 2.5rem;
 }
 
-.link-register {
+.link-register{
   color: var(--color-four);
   transition: color 500ms ease;
-  font-family: var(--Montserrat);
+  font-family: montserrat-extrabold;
+  font-size: 20px;
 }
 .link-register:hover {
   color: var(--color-three);
@@ -1419,6 +1420,15 @@ label {
 }
 .svg-recover {
   border-radius: 100px;
+}
+.recover{
+  color: var(--color-five);
+  text-decoration: none;
+  font-family: montserrat-extrabold;
+}
+.recover:hover{
+  color: #eac500;
+  transition: 500ms ease-in-out;
 }
 /*----------------------componentes------------------------------*/
 /*main tipo canvas*/
