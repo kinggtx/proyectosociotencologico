@@ -184,8 +184,7 @@ video {
 body {
   background-color: var(--color-one);
   font-family: montserrat;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
+
 }
 .header {
   max-width: 100%;
@@ -214,7 +213,7 @@ body {
   margin-left: 0.7rem;
 }
 /* Estilos Para Nav-bar */
-.header > .navbar {
+.nav-bar {
   display: flex;
   flex-direction: row;
 }
@@ -872,18 +871,18 @@ label {
 
 /* Estilos Etiqueta Main */
 .main-login {
-  width: 100%;
-  height: 100vh;
+  max-width: 100%;
+  height: auto;
   display: flex;
+  flex-direction: row;
 }
 /* Estilos Sección 1 */
 .seccion1 {
-  width: 50%;
+  max-width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-right: medium solid var(--color-one);
   background-color: var(--color-five);
   overflow: hidden;
 }
@@ -1073,9 +1072,19 @@ label {
   order: 2; /* Si desea volver a poner el teléfono a la izquierda borre esto :D, no dañe eñ resto del código. GRACIAS... <3 */
 }
 .tlf {
-  max-height: 95vh;
+  margin: 0 auto;
+  width: 1000px;
+  height: auto;
   animation: into-right 700ms ease both;
 }
+/* .photo-web{
+  z-index: 1;
+  width: 300px;
+  top: 0;
+  height: auto;
+  right: 210px;
+  position: absolute;
+} */
 .svg-login {
   width: auto;
   height: 100%;
