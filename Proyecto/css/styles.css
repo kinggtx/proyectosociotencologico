@@ -220,10 +220,10 @@ body {
 
 }
 .header {
-  max-width: 100%;
-  max-height: 50px;
-  margin-top: 10px;
+  width: 100%;
+  height: auto;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   align-content: center;
   justify-content: space-evenly;
@@ -232,6 +232,7 @@ body {
 .image-title {
   margin-left: 10px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   width: auto;
   height: auto;
@@ -792,9 +793,9 @@ label {
 .cat-contain2:hover,
 .cat-contain3:hover,
 .cat-contain4:hover,
-.cat-contain5 :hover {
+.cat-contain5:hover{
   background-position: 0% 200%;
-  transition: 2s ease-in-out;
+  transition: 5s ease-in-out;
 }
 .cat-contain2 {
   background-image: url(../images/diseños/warnings-desing.jpg);
@@ -806,7 +807,7 @@ label {
   background-image: url(../images/diseños/clothes-desing.jpg);
 }
 .cat-contain5 {
-  background-image: url(../images/Wolf.jpg);
+  background-image: url(../images/diseños/pendones.jpg);
 }
 .black-cape {
   background-color: #0006;
