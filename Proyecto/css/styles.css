@@ -33,19 +33,52 @@
 /******************** Reset    ******************/
 html {
   box-sizing: border-box;
+  text-size-adjust: 100%;
+  font-size: 16px;
   scroll-behavior: smooth;
 }
 *,
-*::after,
-*::before {
+*:before,
+*:after {
   box-sizing: inherit;
 }
-img,
-svg,
-video {
-  max-width: 100%;
-  height: auto;
+
+body {
+margin: 0;
+width: 100%;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+line-height: 1.6;
+text-rendering: optimizeLegibility;
+overflow-x: hidden;
+font-size: calc(14px+(18-14)*((100vw-300px)/(1400-300)));
 }
+
+iframe,
+video {
+width: 100%;
+height: calc((100vw - 4rem) * (9 / 16));
+max-height: calc(800px * 9 / 16);
+aspect-ratio: 16 / 9;
+}
+
+img {
+max-width: 100%;
+height: auto;
+}
+
+blockquote p,
+figure {
+margin: 0;
+}
+
+blockquote {
+padding: 0.5rem 1.5rem;
+border-left: medium solid var(--primary-color);
+opacity: 0.75;
+}
+
 
 /******************** Components  ************************/
 
@@ -216,6 +249,7 @@ body {
 .nav-bar {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .nav-bar > a,
 label {
@@ -259,7 +293,7 @@ label {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 90vh;
+  height: auto;
 }
 /* 1er Contenido */
 .content-text {
@@ -273,14 +307,18 @@ label {
   margin-left: 50px;
 }
 .title-one {
+  display: flex;
+  flex-direction: row;
   font-family: montserrat-extrabold;
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   text-align: center;
-  border-bottom: 5px solid var(--color-five);
-  border-top: 5px solid var(--color-five);
   border-radius: 10px;
   padding: 20px;
 }
+.text-three{
+  text-align: center;
+}
+
 .content-text > a {
   display: flex;
   align-items: center;
@@ -360,7 +398,7 @@ label {
   align-items: center;
   position: relative;
   width: 300px;
-  height: 280px;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0rem 0rem 2rem 0.3rem #0003;
@@ -425,7 +463,7 @@ label {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  max-width: 100%;
+  width: auto;
   height: auto;
   justify-content: space-around;
   align-items: center;
@@ -457,20 +495,19 @@ label {
 }
 /* Estilos Para La Etiqueta Footer Y Su Contenido Principal */
 .footer {
-  max-width: 100%;
+  width: auto;
   height: auto;
   background-color: var(--color-five);
-  padding: 20px;
   color: var(--color-one);
 }
 .footer > h2 {
+  font-size: 2rem;
   text-align: center;
   font-family: montserrat-extrabold;
 }
 .footer > p {
   margin: 0 auto;
   text-align: center;
-  width: 800px;
 }
 
 /* Estilos Linea Separadora de Las Redes Sociales */
@@ -483,24 +520,25 @@ label {
 /* Contenido Etiqueta Contenedora Del Footer */
 .content-footer {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  align-items: start;
   align-content: center;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
 }
 
 /* Estilos Parte Izquierda Del Footer Con los Datos */
 .section-one {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
   margin: 10px;
+  width: auto;
+  height: auto;
 }
-.section-one > ul > li {
-  margin: 5px;
-  padding: 1px;
-}
-
 /* Estilos Etiqueta Contenedora del Form */
 .section-two {
   display: flex;
@@ -1097,9 +1135,10 @@ label {
   flex-direction: column;
 }
 .header {
-  width: 100%;
+  width: auto;
   height: 80px;
   padding-top: 20px;
+  flex-wrap: wrap;
 }
 .title-register {
   text-align: center;
@@ -1291,6 +1330,9 @@ label {
 .form-register > a {
   color: var(--color-five);
   font-family: var(--Montserrat-SemBold);
+}
+.form-register>input{
+  margin: 10px 0;
 }
 /*--------------------Styles recover/password-----------------*/
 
@@ -1494,4 +1536,8 @@ a {
 }
 .main-section:hover {
   background-color: rgb(243, 243, 243);
+}
+.iframe{
+  width: 100%;
+  height: auto;
 }
