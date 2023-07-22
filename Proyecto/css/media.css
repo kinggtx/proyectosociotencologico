@@ -745,8 +745,7 @@
   #boton-hamburguesa.mostrando {
     position: fixed;
     top: 1.8rem;
-    right: 1.5rem;
-    margin-left: 0;
+    right: 1rem;
     margin-right: 0;
   }
 
@@ -759,7 +758,8 @@
     text-align: center;
     font-family: montserrat;
     text-decoration: none;
-    width: 50%;
+    width: 60%;
+    height: 50px;
     font-size: 1rem;
     color: black;
     background-color: #fff;
@@ -810,7 +810,6 @@
     align-items: center;
     justify-content: center;
     z-index: 999999;
-    margin-left: 1rem;
     margin-right: 1rem;
   }
 
@@ -847,7 +846,7 @@
     font-size: 3rem;
   }
   .objet-two > article > p {
-    width: 300px;
+    width: 250px;
   }
 
   /* Estilos Para La Etiqueta Footer Y Su Contenido Principal */
