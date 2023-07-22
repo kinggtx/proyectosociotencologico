@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="../css/style-reset.css" />
     <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/media.css">
   </head>
   <body>
     <header class="header">
@@ -18,19 +19,24 @@
         <img src="../images/creativapuntouno.jpg" alt="Logo-Empresa" />
         <h1 class="title-pag">CREATIVA.UNO</h1>
       </div>
-      <nav class="nav-bar">
-        <a href="./index.html">INICIO</a>
-        <a href="./blog.html">BLOG</a>
-        <a href="#footer">CONTACTO</a>
-        <button onclick="window.location.href='./login.html'">
-          INICIAR SESIÓN
-        </button>
-        <label class="ui-switch">
-          <input type="checkbox" />
-          <div class="slider">
-            <div class="circle"></div>
-          </div>
-        </label>
+      <button id="boton-hamburguesa">
+     <span>&#9776;</span>
+      </button>
+      <nav id="menu-hamburguesa">
+       <a href="./index.html"class="link">INICIO</a>
+       <a href="./blog.html"class="link">BLOG</a>
+       <a href="catalogo.html"class="link">CATALOGO</a>
+       <a href="#footer"class="link">CONTACTO</a>
+      <button
+        onclick="window.location.href='./login.html'"
+        class="button-login link">
+        INICIAR SESIÓN
+      </button>
+      <label class="ui-switch m-1rem">
+        <input type="checkbox" />
+        <div class="slider">
+        <div class="circle"></div>
+      </div>
       </nav>
     </header>
 
@@ -1068,5 +1074,8 @@
         </div>
       </div>
     </div>
+
+    <!-- Codigo Javascript Para El Menu Hamburguesa -->
+    <script src="../js/index.js"></script>
   </body>
 </html>

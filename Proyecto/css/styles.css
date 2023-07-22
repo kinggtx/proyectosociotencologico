@@ -44,41 +44,40 @@ html {
 }
 
 body {
-margin: 0;
-width: 100%;
-min-height: 100vh;
-display: flex;
-flex-direction: column;
-line-height: 1.6;
-text-rendering: optimizeLegibility;
-overflow-x: hidden;
-font-size: calc(14px+(18-14)*((100vw-300px)/(1400-300)));
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  font-size: calc(14px+ (18-14) * ((100vw-300px) / (1400-300)));
 }
 
 iframe,
 video {
-width: 100%;
-height: calc((100vw - 4rem) * (9 / 16));
-max-height: calc(800px * 9 / 16);
-aspect-ratio: 16 / 9;
+  width: 100%;
+  height: calc((100vw - 4rem) * (9 / 16));
+  max-height: calc(800px * 9 / 16);
+  aspect-ratio: 16 / 9;
 }
 
 img {
-max-width: 100%;
-height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 blockquote p,
 figure {
-margin: 0;
+  margin: 0;
 }
 
 blockquote {
-padding: 0.5rem 1.5rem;
-border-left: medium solid var(--primary-color);
-opacity: 0.75;
+  padding: 0.5rem 1.5rem;
+  border-left: medium solid var(--primary-color);
+  opacity: 0.75;
 }
-
 
 /******************** Components  ************************/
 
@@ -217,7 +216,6 @@ opacity: 0.75;
 body {
   background-color: var(--color-one);
   font-family: montserrat;
-
 }
 .header {
   width: 100%;
@@ -247,48 +245,72 @@ body {
   margin-left: 0.7rem;
 }
 /* Estilos Para Nav-bar */
-.nav-bar {
+
+/* Estilizar el Contenedor del menú */
+#menu-hamburguesa {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  align-items: center;
+  width: auto;
+  height: auto;
 }
-.nav-bar > a,
-label {
+
+/* Estilizar los elementos del menú */
+
+.link {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   text-align: center;
   font-family: montserrat;
   text-decoration: none;
   font-size: 1rem;
   color: black;
-  background-color: var(--bg-color);
+  background-color: #fff1ff;
   padding: 5px 10px 5px 10px;
   border-radius: 20px;
-  margin: 40px;
-  margin: 0 20px;
+  margin: 0.5rem;
+  height: 35px;
 }
-.nav-bar > a:hover {
-  background-color: var(--color-five);
+.link:hover {
+  background-color: #820000;
   color: white;
   transform: scale(1.1);
   transition: 300ms ease-in;
 }
-.nav-bar button {
+.button-login {
   border: none;
-  padding: 7px;
+  padding: 5px 10px 5px 10px;
   border-radius: 20px;
   font-family: montserrat;
   color: var(--color-four);
-  background-color: var(--bg-color);
+  background-color: #fff1ff;
   cursor: pointer;
   transition: background-color 300ms ease-in;
 }
-.nav-bar button:hover {
+.button-login:hover {
   color: var(--color-one);
-  background-color: var(--color-five);
+  background-color: #820000;
   transform: scale(1.1);
   transition: 300ms ease-in;
 }
+.m-1rem {
+  margin: 1rem;
+}
+
+/* Estilizar el icono del menú hamburguesa */
+#boton-hamburguesa {
+  visibility: hidden;
+  background-color: #fff1fd;
+  font-size: 0;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Estilos Para La Etiqueta Contenedora Del 1er Contenido */
 .content-one {
   display: flex;
@@ -316,7 +338,7 @@ label {
   border-radius: 10px;
   padding: 20px;
 }
-.text-three{
+.text-three {
   text-align: center;
 }
 
@@ -793,7 +815,7 @@ label {
 .cat-contain2:hover,
 .cat-contain3:hover,
 .cat-contain4:hover,
-.cat-contain5:hover{
+.cat-contain5:hover {
   background-position: 0% 200%;
   transition: 5s ease-in-out;
 }
@@ -1148,7 +1170,7 @@ label {
   font-size: 2.5rem;
 }
 
-.link-register{
+.link-register {
   color: var(--color-four);
   transition: color 500ms ease;
   font-family: montserrat-extrabold;
@@ -1332,7 +1354,7 @@ label {
   color: var(--color-five);
   font-family: var(--Montserrat-SemBold);
 }
-.form-register>input{
+.form-register > input {
   margin: 10px 0;
 }
 /*--------------------Styles recover/password-----------------*/
@@ -1464,12 +1486,12 @@ label {
 .svg-recover {
   border-radius: 100px;
 }
-.recover{
+.recover {
   color: var(--color-five);
   text-decoration: none;
   font-family: montserrat-extrabold;
 }
-.recover:hover{
+.recover:hover {
   color: #eac500;
   transition: 500ms ease-in-out;
 }
@@ -1538,7 +1560,7 @@ a {
 .main-section:hover {
   background-color: rgb(243, 243, 243);
 }
-.iframe{
+.iframe {
   width: 100%;
   height: auto;
 }
