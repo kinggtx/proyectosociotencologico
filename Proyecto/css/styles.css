@@ -935,20 +935,21 @@ body {
 
 /* Estilos Etiqueta Main */
 .main-login {
-  max-width: 100%;
+  width:auto;
   height: auto;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 /* Estilos Sección 1 */
 .seccion1 {
-  max-width: 50%;
+  width: auto;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: var(--color-five);
-  overflow: hidden;
 }
 .tlf {
   max-height: 95vh;
@@ -960,7 +961,8 @@ body {
 }
 /* Estilos Sección 2 */
 .seccion2 {
-  width: 50%;
+  width: auto;
+  height: auto;
   display: flex;
   flex-direction: column;
 }
@@ -976,8 +978,8 @@ body {
 }
 /* Estilos Login Container */
 .input-container {
-  width: 100%;
-  height: 100vh;
+  width: auto;
+  height: auto;
   background-color: #ffffff;
 }
 .input-container > .form-login {
@@ -1127,7 +1129,7 @@ body {
 }
 /* Estilos Sección 1 */
 .seccion1 {
-  width: 50%;
+  width: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1502,11 +1504,13 @@ body {
 /*main tipo canvas*/
 .positions-menu-of-content {
   margin-top: 50px;
+  height: auto;
+  width: auto;
   display: flex;
   flex-wrap: wrap;
 }
 .direction-column {
-  max-width: 80%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1518,9 +1522,8 @@ body {
   font-size: 2rem;
 }
 .main {
-  box-shadow: 0.1px 1px 0.3px black;
-  max-width: 200px;
-  max-height: 100vh;
+  width: 200px;
+  height: 100vh;
   flex-direction: column;
   position: sticky;
   top: 0;
@@ -1553,10 +1556,14 @@ a {
   text-decoration: none;
 }
 .main-section {
+  width: auto;
+  height: auto;
   padding: 1rem;
   margin: 1rem;
 }
 .main-section > a {
+  width: auto;
+  height: auto  ;
   color: var(--color-four);
   font-family: var(--Montserrat);
 }
