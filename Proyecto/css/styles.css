@@ -660,9 +660,10 @@ body {
 /*----------- ESTILOS DEL BLOG ------------------------*/
 /* cards blog*/
 .blog {
-  max-width: 100%;
+  width: auto;
   height: auto;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
 }
 .title-blog {
@@ -734,32 +735,41 @@ body {
 /* fin cards blog*/
 .slogan {
   font-family: montserrat-extrabold;
-  max-width: 100%;
-  height: 80vh;
+  width: auto;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  flex-wrap: wrap;
   padding: 10px;
 }
 .slogan > article > h2 {
+  width: auto;
+  height: auto;
   border-left: 10px groove var(--color-five);
   margin: 10px;
   padding-right: 10px;
   padding-left: 10px;
-  font-size: 4.5rem;
+  font-size: 4rem;
 }
 .position-1 {
+  width: auto;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
 .position-2 {
+  width: auto;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 .position-3 {
+  width: auto;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
@@ -768,11 +778,11 @@ body {
 /* Estilos Sección Categorías */
 
 .categorias {
-  margin: 1rem auto;
-  max-width: 100%;
+  margin: 0 auto;
+  width: auto;
   height: auto;
   display: flex;
-  padding: 80px;
+  padding: 10px;
 }
 .row {
   width: 100%;
