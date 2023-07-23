@@ -820,8 +820,8 @@ body {
 .cat-contain5 {
   background-image: url(../images/diseños/pictures-desing.jpg);
   background-size: cover;
-  width: 100;
-  height: 18rem;
+  width: auto;
+  height: auto;
   margin: 1rem 0;
 }
 .cat-contain:hover,
