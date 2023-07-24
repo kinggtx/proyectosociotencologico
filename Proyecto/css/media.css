@@ -732,6 +732,14 @@
   .name-photo {
     width: 92%;
   }
+  .content-blog {
+    margin: 0 auto;
+  }
+
+  .content-blog > h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
 }
 @media screen and (max-width: 550px) {
   /*main tipo canvas*/
@@ -1022,6 +1030,7 @@
   .content-blog > h2 {
     font-size: 2rem;
     text-align: center;
+    margin-top: 2rem;
   }
   /* Estilos Parte Izquierda del 3er Contenido */
   .objet-one {

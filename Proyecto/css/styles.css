@@ -80,7 +80,7 @@ blockquote {
 }
 
 /******************** Components  ************************/
-.contenedor { 
+.contenedor {
   width: auto;
   height: auto;
   margin: auto;
@@ -239,10 +239,10 @@ blockquote {
   animation: into-right 700ms ease both;
 }
 .person {
-  animation: into-right 700ms ease 700ms both;
+  animation: into-right 700ms ease 500ms both;
 }
 .privacity {
-  animation: into-right 700ms ease 1400ms both;
+  animation: into-right 700ms ease 1200ms both;
 }
 
 /************************* Site Styles ***************************/
