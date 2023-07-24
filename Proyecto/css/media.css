@@ -1301,6 +1301,9 @@
     height: auto;
     padding: 0.6rem;
   }
+  .slogan > article > h2 {
+    font-size: 2rem;
+  }
 }
 @media screen and (max-width: 320px) {
   body {
