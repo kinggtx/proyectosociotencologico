@@ -80,6 +80,36 @@ blockquote {
 }
 
 /******************** Components  ************************/
+.contenedor {
+  margin: auto;
+  display: table;
+}
+
+.efecto {
+  position: relative;
+  float: left;
+  color: #000;
+  font-size: 2.5em;
+}
+
+.efecto > span {
+  position: absolute;
+  right: 0;
+  width: 0;
+  background: white;
+  border-left: 1px solid #000;
+  animation: escribir 5s steps(30) infinite alternate;
+}
+
+@keyframes escribir {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
 /*Checkbox de modo dark*/
 .ui-switch {
   /* switch */
@@ -165,7 +195,7 @@ blockquote {
 }
 /******************** Utilities   ************************/
 /*Tipo bosstrap, atributtos, Animaciones y propiedades*/
-.h2-title{
+.h2-title {
   font-size: 3rem;
   text-align: center;
   font-family: var(--Montserrat-ExtBold);
@@ -370,7 +400,6 @@ body {
   flex-direction: column;
   align-items: center;
   align-content: center;
-  margin: 50px 0;
   max-width: 100%;
   height: auto;
 }
@@ -678,10 +707,13 @@ body {
 }
 .position-card-1 {
   display: flex;
+  width: auto;
+  height: auto;
   flex-wrap: wrap;
+  padding: 20px;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 300px;
+  margin-bottom: 200px;
 }
 .card {
   width: 280px;
@@ -701,7 +733,6 @@ body {
   opacity: 0.8;
 }
 .content-card {
-  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -721,8 +752,8 @@ body {
   object-fit: cover;
 }
 .img-card-blog > img {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 125px;
   border-radius: 50%;
   border: 10px solid white;
 }
@@ -745,7 +776,7 @@ body {
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
-  padding: 10px;
+  margin-bottom: 5rem;
 }
 .slogan > article > h2 {
   width: auto;
@@ -761,7 +792,7 @@ body {
   height: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
 }
 .position-2 {
   width: auto;
@@ -775,7 +806,7 @@ body {
   height: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: center;
 }
 /* -----------------------Catalogo-styles------------------*/
 /* Estilos Sección Categorías */
@@ -786,7 +817,7 @@ body {
   height: 100vh;
   display: flex;
   padding: 10px;
-  margin-bottom:40px
+  margin-bottom: 40px;
 }
 .row {
   width: 100%;
