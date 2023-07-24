@@ -935,7 +935,7 @@ body {
 
 /* Estilos Etiqueta Main */
 .main-login {
-  width:auto;
+  width: auto;
   height: auto;
   display: flex;
   flex-direction: row;
@@ -950,6 +950,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: var(--color-five);
+  border: 0;
 }
 .tlf {
   max-height: 95vh;
@@ -1134,7 +1135,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-left: medium solid var(--color-one);
   order: 2; /* Si desea volver a poner el teléfono a la izquierda borre esto :D, no dañe eñ resto del código. GRACIAS... <3 */
 }
 .tlf {
@@ -1377,7 +1377,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-right: medium solid var(--color-one);
   background-color: var(--color-five);
   overflow: hidden;
 }
@@ -1563,7 +1562,7 @@ a {
 }
 .main-section > a {
   width: auto;
-  height: auto  ;
+  height: auto;
   color: var(--color-four);
   font-family: var(--Montserrat);
 }
