@@ -80,7 +80,6 @@ blockquote {
 }
 
 /******************** Components  ************************/
-/*style js*/
 /*Checkbox de modo dark*/
 .ui-switch {
   /* switch */
@@ -165,7 +164,6 @@ blockquote {
   height: 0;
 }
 /*fin checkbox-modo dark*/
-
 /******************** Utilities   ************************/
 /*Tipo bosstrap, atributtos, Animaciones y propiedades*/
 /*------------------- Animaciones keyframe---------------*/
@@ -797,6 +795,7 @@ body {
 .cat-link_l {
   text-decoration: none;
   width: 97%;
+  height: auto;
   padding: 0;
   align-self: center;
   height: 15rem;
@@ -871,8 +870,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: auto;
   width: 280px;
+  height: auto;
   position: relative;
   margin-bottom: 20px;
 }
@@ -961,7 +960,6 @@ body {
   align-items: center;
   justify-content: center;
   background-color: var(--color-five);
-  border: 0;
 }
 .tlf {
   max-height: 95vh;
@@ -1146,6 +1144,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-left: medium solid var(--color-one);
   order: 2; /* Si desea volver a poner el teléfono a la izquierda borre esto :D, no dañe eñ resto del código. GRACIAS... <3 */
 }
 .tlf {
@@ -1388,6 +1387,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-right: medium solid var(--color-one);
   background-color: var(--color-five);
   overflow: hidden;
 }
@@ -1521,6 +1521,7 @@ body {
 }
 .direction-column {
   width: 80%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
