@@ -778,9 +778,9 @@ body {
 /* Estilos Sección Categorías */
 
 .categorias {
-  margin: 0 auto;
+  margin: 0 auto 5rem;
   width: auto;
-  height: auto;
+  height: 100vh;
   display: flex;
   padding: 10px;
 }
@@ -799,6 +799,7 @@ body {
   width: 97%;
   padding: 0;
   align-self: center;
+  height: 15rem;
 }
 .cat-link_s:hover,
 .cat-link_m:hover,
@@ -821,7 +822,7 @@ body {
   background-image: url(../images/diseños/pictures-desing.jpg);
   background-size: cover;
   width: auto;
-  height: auto;
+  height: 100%;
   margin: 1rem 0;
 }
 .cat-contain:hover,
