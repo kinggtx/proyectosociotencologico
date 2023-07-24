@@ -834,6 +834,7 @@ body {
   height: 17rem;
   padding: 0;
   align-self: center;
+  margin: 0.6rem;
 }
 .cat-link_s:hover,
 .cat-link_m:hover,

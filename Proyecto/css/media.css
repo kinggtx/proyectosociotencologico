@@ -116,7 +116,7 @@
   .categorias {
     margin: 0 auto 5rem;
     width: 75%;
-    height: auto;
+    height: 100vh;
     display: flex;
     padding: 10px;
   }
