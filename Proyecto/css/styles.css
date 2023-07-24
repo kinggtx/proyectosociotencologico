@@ -771,13 +771,14 @@ body {
   flex-wrap: wrap;
   justify-content: flex-end;
 }
-/* -----------------------Catalogo-styles------------------*/
+
+/* -----------------------Catalogo-styles------------------ */
 /* Estilos Sección Categorías */
 
 .categorias {
   margin: 0 auto 5rem;
   width: auto;
-  height: 100vh;
+  height: auto;
   display: flex;
   padding: 10px;
 }
@@ -794,10 +795,10 @@ body {
 .cat-link_l {
   text-decoration: none;
   width: 97%;
-  height: auto;
+  height: 17rem;
   padding: 0;
   align-self: center;
-  height: 15rem;
+  margin-top: 1rem;
 }
 .cat-link_s:hover,
 .cat-link_m:hover,
@@ -857,7 +858,7 @@ body {
   color: #ffffff;
   text-align: center;
   font-weight: 900;
-  font-family: var(--montserrat_XB);
+  font-family: var(--Montserrat-ExtraBold);
 }
 
 /* Estilos Categorías */
