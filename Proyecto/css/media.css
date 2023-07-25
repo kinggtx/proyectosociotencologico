@@ -11,6 +11,46 @@
     width: 100%;
     height: 100%;
   }
+
+  /* -------------------------login-styles------------------*/
+  .input-container .form-login {
+    padding: 9px;
+  }
+  .title-login {
+    font-size: 2.3rem;
+  }
+  /* Estilos Login Container */
+  .label-login {
+    margin-left: 4rem;
+    font-size: 1.15rem;
+  }
+  /* Estilos Finales */
+  .sub-title-three-login,
+  .recover {
+    font-size: 1rem;
+    margin: 5px;
+  }
+  .social-network a svg {
+    width: 35px;
+    height: 35px;
+  }
+
+  /*---------------------------styles Register---------------------*/
+  /* Estilos Sección 1 */
+  .seccion1 {
+    order: 2; /* Si desea volver a poner el teléfono a la izquierda borre esto :D, no dañe eñ resto del código. GRACIAS... <3 */
+  }
+  /* Estilos Input Nombre */
+  .user,
+  .mail,
+  .tlfno,
+  .password {
+    width: 72%;
+  }
+  /* Estilos Finales */
+  .alert-sms {
+    font-size: 1.1rem;
+  }
 }
 @media screen and (max-width: 1000px) {
   .header {
@@ -375,6 +415,11 @@
     color: #fff;
   }
 }
+@media screen and (max-width: 803px) {
+  .alert-sms {
+    font-size: 1rem;
+  }
+}
 @media screen and (max-width: 768px) {
   .header {
     height: auto;
@@ -632,6 +677,16 @@
     background-color: #820000;
     color: #fff;
   }
+  /* Estilos del Login */
+  .seccion2-768px {
+    width: 100%;
+  }
+  .input-container .form-login {
+    width: 60%;
+  }
+  .title-login {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 600px) {
   .header {
@@ -740,10 +795,23 @@
     font-size: 2rem;
     text-align: center;
   }
+
+  /* Estilos del Login */
+  .seccion2-768px {
+    width: 100%;
+  }
+  .label-login {
+    margin-left: 3rem;
+  }
+  .input-container .form-login {
+    width: 70%;
+  }
+  .title-login {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 550px) {
   /*main tipo canvas*/
-
   .title-text {
     font-size: 1.8rem;
   }
@@ -756,6 +824,19 @@
   }
   .main-section {
     width: 10rem;
+  }
+}
+@media screen and (max-width: 503px) {
+  .input-container .form-login {
+    width: 75%;
+  }
+  .user,
+  .mail,
+  .tlfno,
+  .password {
+    font-size: 1rem;
+    padding: 0.3rem;
+    padding-left: 0.5rem;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1098,6 +1179,32 @@
   .name-photo {
     width: 90%;
   }
+
+  /* Estilos Del Login */
+  .seccion2-768px {
+    width: 100%;
+  }
+  .label-login {
+    margin-left: 2.1rem;
+  }
+  .input-container .form-login {
+    width: 85%;
+  }
+  .title-login {
+    width: 100%;
+  }
+  .user,
+  .mail,
+  .tlfno,
+  .password {
+    width: 80%;
+    font-size: 1rem;
+    padding: 0.3rem;
+    padding-left: 0.5rem;
+  }
+  .login {
+    padding: 0.6rem;
+  }
 }
 @media screen and (max-width: 375px) {
   body {
@@ -1313,6 +1420,42 @@
   .slogan > article > h2 {
     font-size: 2rem;
   }
+
+  /* Estilos Del Login */
+  .seccion2-768px {
+    max-height: 100vh;
+  }
+  .input-container .form-login {
+    padding: 0;
+    max-height: 100vh;
+  }
+  .title-login {
+    margin-top: 0;
+    font-size: 2rem;
+  }
+  .sub-title-three-login {
+    font-size: 0.9rem;
+  }
+  .social-network a svg {
+    width: 30px;
+    height: 30px;
+  }
+  .login {
+    padding: 0.4rem;
+  }
+  .user,
+  .mail,
+  .tlfno,
+  .password {
+    width: 82%;
+    font-size: 1rem;
+    padding: 0.3rem;
+    padding-left: 0.5rem;
+  }
+  .label-login {
+    font-size: 1rem;
+    margin-left: 1.8rem;
+  }
 }
 @media screen and (max-width: 320px) {
   body {
@@ -1476,6 +1619,9 @@
     width: 2.5rem;
     height: 2.5rem;
   }
+  .section-one iframe {
+    display: block;
+  }
 
   /* -----------------------Catalogo-styles------------------ */
   /* Estilos Sección Categorías */
@@ -1523,5 +1669,38 @@
     width: 8rem;
     height: auto;
     padding: 0.6rem;
+  }
+  /* Estilos Del Login */
+  .title-login {
+    font-size: 1.6rem;
+  }
+  .login {
+    padding: 0.4rem;
+    font-size: 1.1rem;
+  }
+  .social-network a svg {
+    width: 30px;
+    height: 30px;
+    margin-top: 0.7rem;
+  }
+  .user,
+  .mail,
+  .tlfno,
+  .password {
+    width: 85%;
+    font-size: 1rem;
+    padding: 0.3rem;
+    padding-left: 0.5rem;
+  }
+  .label-login {
+    margin-left: 1.2rem;
+  }
+  .alert-sms {
+    font-size: 0.9rem;
+  }
+  .form-login svg,
+  .svg-recover {
+    width: 80px;
+    height: 80px;
   }
 }
