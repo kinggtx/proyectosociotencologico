@@ -80,7 +80,7 @@ blockquote {
 }
 
 /******************** Components  ************************/
-.contenedor { 
+.contenedor {
   width: auto;
   height: auto;
   margin: auto;
@@ -239,10 +239,10 @@ blockquote {
   animation: into-right 700ms ease both;
 }
 .person {
-  animation: into-right 700ms ease 700ms both;
+  animation: into-right 700ms ease 500ms both;
 }
 .privacity {
-  animation: into-right 700ms ease 1400ms both;
+  animation: into-right 700ms ease 1200ms both;
 }
 
 /************************* Site Styles ***************************/
@@ -982,15 +982,61 @@ body {
 
 /* Estilos Etiqueta Main */
 .main-login {
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
+/* Estilos Sección 2  */
+.seccion2 {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.title-login {
+  text-align: center;
+  font-size: 3.5rem;
+  color: var(--color-five);
+  font-family: var(--Montserrat-ExtraBold);
+}
+/* Estilos Login Container */
+.input-container {
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.input-container .form-login {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hr-login {
+  width: 80%;
+}
+.label-login {
+  color: #0007;
+  align-self: flex-start;
+  margin-left: 11rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-family: var(--Montserrat);
+}
 /* Estilos Sección 1 */
 .seccion1 {
-  width: auto;
+  width: 50%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -998,132 +1044,19 @@ body {
   justify-content: center;
   background-color: var(--color-five);
 }
-.tlf {
-  max-height: 95vh;
-  animation: into-left 700ms ease both;
-}
-.tlf > svg {
-  width: auto;
-  height: 100%;
-}
-/* Estilos Sección 2 */
-.seccion2 {
-  width: auto;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-}
-.title-login {
-  text-align: center;
-  color: var(--color-five);
-  font-family: var(--Montserrat-ExtraBold);
-}
-.subtitle-sec2 {
-  text-align: center;
-  color: var(--color-one);
-  font-family: var(--Montserrat-ExtBold);
-}
-/* Estilos Login Container */
-.input-container {
-  width: auto;
-  height: auto;
-  background-color: #ffffff;
-}
-.input-container > .form-login {
-  width: 90%;
-  height: auto;
-  margin: 2rem auto 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.hr-login {
-  width: 70%;
-}
-.label-login {
-  color: #0007;
-  align-self: flex-start;
-  margin-left: 4rem;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  font-size: 1rem;
-  font-family: var(--Montserrat);
-}
-/* Estilos Input Mail */
-.mail {
-  width: 50%;
-  height: 1.5rem;
-  font-size: 1.1rem;
-  padding: 0.2rem;
-  padding-left: 0.5rem;
-  border: none;
-  border: thin solid #0007;
-  border-radius: 7px;
-  color: var(--color-four);
-  animation: into-right 700ms ease both;
-}
-.mail::placeholder {
-  font-size: 1.1rem;
-  color: #0006;
-  padding-left: 0.4rem;
-  font-family: var(--Montserrat);
-}
-.mail:focus {
-  outline: none;
-  border: thin solid #820000;
-}
-.mail:focus:valid {
-  outline: none;
-  border: thin solid #0f0;
-}
-.mail:valid {
-  outline: none;
-  border: thin solid #0f0;
-}
-/* Estilos Input Contraseña */
-.password {
-  width: 50%;
-  height: 1.5rem;
-  font-size: 1.1rem;
-  padding: 0.2rem;
-  padding-left: 0.5rem;
-  border: none;
-  border: thin solid #0007;
-  border-radius: 7px;
-  color: var(--color-four);
-  animation: into-right 700ms ease 700ms both;
-}
-.password::placeholder {
-  font-size: 1.1rem;
-  color: #0006;
-  padding-left: 0.4rem;
-  font-family: var(--Montserrat);
-}
-.password:focus {
-  outline: none;
-  border: thin solid #820000;
-}
-.password:focus:valid {
-  outline: none;
-  border: thin solid #0f0;
-}
-.password:valid {
-  outline: none;
-  border: thin solid #0f0;
-}
-/* Login */
+/* Estilos Boton Submit */
 .login {
   margin: 0.7rem auto 0.5rem;
   border: none;
   background-color: var(--color-five);
   color: var(--color-one);
-  padding: 10px;
-  font-size: 1.1rem;
+  padding: 0.8rem;
+  font-size: 1.3rem;
   border-radius: 10px;
   cursor: pointer;
   font-weight: bold;
   transition: background-color 700ms ease;
-  animation: into-right 700ms ease 1400ms both;
+  animation: into-left 700ms ease 1800ms both;
   font-family: var(--Montserrat-SemBold);
 }
 .login > a {
@@ -1135,23 +1068,22 @@ body {
   background-color: var(--color-two);
 }
 /* Estilos Finales */
-.sub-title-three-login {
-  font-size: 1rem;
+.sub-title-three-login,
+.recover {
+  font-size: 1.3rem;
   text-align: center;
   font-family: var(--Montserrat-ExtBold);
 }
-.sub-title-three-login a {
+.sub-title-three-login a,
+.recover a {
   color: var(--color-five);
   transition: color 400ms ease;
-  animation: into-right 700ms ease 2100ms both;
+  animation: into-right 700ms ease 1000ms both;
   font-family: var(--Montserrat);
 }
-.sub-title-three-login a:hover {
+.sub-title-three-login a:hover,
+.recover a:hover {
   color: var(--color-two);
-}
-.form-login {
-  padding-top: 50px;
-  max-width: 70%;
 }
 .social-network {
   display: flex;
@@ -1168,363 +1100,67 @@ body {
   transition: 300ms ease-in-out;
 }
 /*---------------------------styles Register---------------------*/
-/* Estilos Etiqueta Main */
-.main-register {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-}
 /* Estilos Sección 1 */
 .seccion1 {
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-left: medium solid var(--color-one);
   order: 2; /* Si desea volver a poner el teléfono a la izquierda borre esto :D, no dañe eñ resto del código. GRACIAS... <3 */
 }
-.tlf {
-  margin: 0 auto;
-  width: 1000px;
-  height: auto;
-  animation: into-right 700ms ease both;
-}
-/* .photo-web{
-  z-index: 1;
-  width: 300px;
-  top: 0;
-  height: auto;
-  right: 210px;
-  position: absolute;
-} */
-.svg-login {
-  width: auto;
-  height: 100%;
-}
-/* Estilos Sección 2 */
-.seccion2 {
-  width: 50%;
-  max-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-.header {
-  width: auto;
-  height: 80px;
-  padding-top: 20px;
-  flex-wrap: wrap;
-}
-.title-register {
-  text-align: center;
-  color: var(--color-five);
-  font-family: var(--Montserrat-ExtBold);
-  font-size: 2.5rem;
-}
-
-.link-register {
-  color: var(--color-four);
-  transition: color 500ms ease;
-  font-family: montserrat-extrabold;
-  font-size: 20px;
-}
-.link-register:hover {
-  color: var(--color-three);
-}
-/* Estilos Login Container */
-.input-container {
-  width: 100%;
-  height: 100vh;
-  background-color: #ffffff;
-}
-.input-container form {
-  width: 90%;
-  height: auto;
-  margin: 0 auto 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.label-for-register {
-  color: #0007;
-  align-self: flex-start;
-  margin-left: 4rem;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
-  font-family: var(--Montserrat);
-}
 /* Estilos Input Nombre */
-.user {
+.user,
+.mail,
+.tlfno,
+.password {
   width: 50%;
-  height: 1.5rem;
+  /* height: 1.5rem; */
   font-size: 1.1rem;
-  padding: 0.2rem;
+  padding: 0.4rem;
   padding-left: 0.5rem;
   border: none;
   border: thin solid #0007;
-  border-radius: 7px;
+  border-radius: 0.5rem;
   color: var(--color-four);
   animation: into-left 700ms ease both;
 }
-.user::placeholder {
-  font-size: 1.1rem;
-  color: #0006;
-  padding-left: 0.4rem;
-  font-family: var(--Montserrat);
-}
-.user:focus {
-  outline: none;
-  border: thin solid #820000;
-}
-.user:focus:valid {
-  outline: none;
-  border: thin solid #0f0;
-}
-.user:valid {
-  outline: none;
-  border: thin solid #0f0;
-}
-/* Estilos Input Mail */
-.mail {
-  width: 50%;
-  height: 1.5rem;
-  font-size: 1.1rem;
-  padding: 0.2rem;
-  padding-left: 0.5rem;
-  border: none;
-  border: thin solid #0007;
-  border-radius: 7px;
-  color: var(--color-four);
-  animation: into-left 700ms ease 1400ms both;
-}
-.mail::placeholder {
-  font-size: 1.1rem;
-  color: #0006;
-  padding-left: 0.4rem;
-  font-family: var(--Montserrat);
-}
-.mail:focus {
-  outline: none;
-  border: thin solid #820000;
-}
-.mail:focus:valid {
-  outline: none;
-  border: thin #0f0 solid;
-}
-.mail:valid {
-  outline: none;
-  border: thin #0f0 solid;
-}
-
-/* Estilos Input Teléfono */
-.tlfno {
-  width: 50%;
-  height: 1.5rem;
-  font-size: 1.1rem;
-  padding: 0.2rem;
-  padding-left: 0.5rem;
-  border: none;
-  border: thin solid #0007;
-  border-radius: 7px;
-  color: var(--color-four);
-  animation: into-left 700ms ease 2100ms both;
-}
-.tlfno::placeholder {
-  font-size: 1.1rem;
-  color: #0006;
-  padding-left: 0.4rem;
-  font-family: var(--Montserrat);
-}
-.tlfno:focus {
-  outline: none;
-  border: thin solid #820000;
-}
-.tlfno:focus:valid {
-  outline: none;
-  border: thin solid #0f0;
-}
-.tlfno:valid {
-  outline: none;
-  border: thin solid #0f0;
-}
-/* Estilos Input Contraseña */
-.password {
-  width: 50%;
-  height: 1.5rem;
-  font-size: 1.1rem;
-  padding: 0.2rem;
-  padding-left: 0.5rem;
-  border: none;
-  border: thin solid #0007;
-  border-radius: 7px;
-  color: var(--color-four);
-  animation: into-left 700ms ease 2800ms both;
-}
+.user::placeholder,
+.mail::placeholder,
+.tlfno::placeholder,
 .password::placeholder {
   font-size: 1.1rem;
   color: #0006;
   padding-left: 0.4rem;
   font-family: var(--Montserrat);
 }
+.user:focus,
+.mail:focus,
+.tlfno:focus,
 .password:focus {
   outline: none;
   border: thin solid #820000;
 }
+.user:focus:valid,
+.mail:focus:valid,
+.tlfno:focus:valid,
 .password:focus:valid {
   outline: none;
   border: thin solid #0f0;
 }
+.user:valid,
+.mail:valid,
+.tlfno:valid,
 .password:valid {
   outline: none;
   border: thin solid #0f0;
 }
-/* Login */
-.login {
-  margin: 0.7rem auto 0.5rem;
-  border: none;
-  background-color: var(--color-five);
-  color: var(--color-one);
-  padding: 10px;
-  font-size: 1.1rem;
-  border-radius: 10px;
-  cursor: pointer;
-  font-weight: 700;
-  transition: background-color 700ms ease;
-  animation: into-left 700ms ease 3500ms both;
-  font-family: var(--Montserrat-SemBold);
-}
-.login:hover {
-  background-color: var(--color-three);
-  transition: all 300ms ease;
-}
-.svg-register {
-  border-radius: 100px;
-}
-.form-register > a {
-  color: var(--color-five);
-  font-family: var(--Montserrat-SemBold);
-}
-.form-register > input {
-  margin: 10px 0;
-}
-/*--------------------Styles recover/password-----------------*/
-
-/* Estilos Etiqueta Main */
-.main-recover-password {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-}
-/* Estilos Sección 1 */
-.seccion1 {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-right: medium solid var(--color-one);
-  background-color: var(--color-five);
-  overflow: hidden;
-}
-.tlf {
-  max-height: 95vh;
-  animation: into-left 700ms ease both;
-}
-.tlf svg {
-  width: auto;
-  height: 100%;
-}
-/* Estilos Sección 2 */
-.seccion2 {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-}
-.title-recover-password {
-  text-align: center;
-  color: var(--color-five);
-  font-family: var(--Montserrat-ExtBold);
-  font-size: 1.5rem;
-}
-/* Estilos Login Container */
-.input-container {
-  width: 100%;
-  height: 100vh;
-  background-color: #ffffff;
-}
-.input-container form {
-  width: 90%;
-  height: 90%;
-  margin: 2rem auto 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.hr-recover-password {
-  width: 70%;
-}
-.label-recover-password {
-  color: #0007;
-  align-self: flex-start;
-  margin-left: 4rem;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
-  font-family: var(--Montserrat);
-}
 /* Estilos Input Mail */
 .mail {
-  width: 50%;
-  height: 1.5rem;
-  font-size: 1.1rem;
-  padding: 0.2rem;
-  padding-left: 0.5rem;
-  border: none;
-  border: thin solid #0007;
-  border-radius: 7px;
-  color: var(--color-four);
-  animation: into-right 700ms ease both;
+  animation: into-left 700ms ease 800ms both;
 }
-.mail::placeholder {
-  font-size: 1.2rem;
-  color: #0006;
-  padding-left: 0.4rem;
-  font-family: var(--Montserrat);
+/* Estilos Input Teléfono */
+.tlfno {
+  animation: into-left 700ms ease 1100ms both;
 }
-.mail:focus {
-  outline: none;
-  border: thin solid #820000;
-}
-.mail:focus:valid {
-  outline: none;
-  border: thin solid #0f0;
-}
-.mail:valid {
-  outline: none;
-  border: thin solid #0f0;
-}
-/* Login */
-.login-recover {
-  margin: 0.7rem auto 0.5rem;
-  border: none;
-  background-color: var(--color-five);
-  color: var(--color-one);
-  padding: 10px;
-  padding-right: 30px;
-  padding-left: 30px;
-  font-size: 1.1rem;
-  border-radius: 10px;
-  cursor: pointer;
-  font-weight: 700;
-  transition: background-color 700ms ease;
-  animation: into-right 700ms ease 700ms both;
-  font-family: var(--Montserrat-SemBold);
-}
-.login-recover:hover {
-  background-color: var(--color-two);
+/* Estilos Input Contraseña */
+.password {
+  animation: into-left 700ms ease 1500ms both;
 }
 /* Estilos Finales */
 .alert-sms {
@@ -1532,21 +1168,10 @@ body {
   text-align: center;
   font-family: var(--Montserrat);
   letter-spacing: -1px;
-  animation: into-right 700ms ease 1400ms both;
-  font-size: 1rem;
+  animation: into-left 700ms ease 1400ms both;
+  font-size: 1.2rem;
 }
-.svg-recover {
-  border-radius: 100px;
-}
-.recover {
-  color: var(--color-five);
-  text-decoration: none;
-  font-family: montserrat-extrabold;
-}
-.recover:hover {
-  color: #eac500;
-  transition: 500ms ease-in-out;
-}
+
 /*----------------------componentes------------------------------*/
 /*main tipo canvas*/
 .positions-menu-of-content {
