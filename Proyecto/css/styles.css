@@ -269,9 +269,13 @@ body {
   width: auto;
   height: auto;
 }
-.image-title > img {
+.image-title > a {
+  display: flex;
+  align-items: center;
+}
+.image-title > a > img {
   width: 60px;
-  height: 60px;
+  height: auto;
 }
 .title-pag {
   font-family: tt-chocolate;
