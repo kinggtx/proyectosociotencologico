@@ -991,7 +991,42 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  overflow: hidden;
 }
+/* Estilos Seccion 1 */
+.overflow-hidden {
+  width: 400px;
+  height: 600px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.telef {
+  padding-bottom: 13px;
+  width: 270px;
+  height: 565px;
+  background-image: url(../images/Telef\ svg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+}
+.img-telef {
+  max-width: 150%;
+  max-width: 400px;
+  height: 600px;
+}
+.telef:hover {
+  background-position: 0 100%;
+  transition: 6s eaSe;
+}
+
 /* Estilos Sección 2  */
 .seccion2 {
   width: 50%;
