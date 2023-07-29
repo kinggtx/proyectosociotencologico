@@ -99,7 +99,7 @@ blockquote {
   width: 0;
   background: white;
   border-left: 1px solid #000;
-  animation: escribir 5s steps(30) infinite alternate;
+  animation: escribir 5s linear infinite alternate;
 }
 
 @keyframes escribir {
@@ -274,7 +274,7 @@ body {
   align-items: center;
 }
 .image-title > a > img {
-  width: 60px;
+  width: 50px;
   height: auto;
 }
 .title-pag {
@@ -715,8 +715,7 @@ body {
   width: auto;
   height: auto;
   flex-wrap: wrap;
-  padding: 20px;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   margin-bottom: 200px;
 }
@@ -725,7 +724,7 @@ body {
   height: 350px;
   border-radius: 10px;
   position: relative;
-  margin-top: 200px;
+  margin-top: 100px;
 }
 .color-top-card {
   margin: 0;
@@ -788,6 +787,7 @@ body {
   height: auto;
   border-left: 10px groove var(--color-five);
   font-size: 4rem;
+  padding-left: 20px;
   margin: 15px;
 }
 .position-1 {
@@ -877,7 +877,7 @@ body {
   background-image: url(../images/diseños/warnings-desing.jpg);
 }
 .cat-contain3 {
-  background-image: url(../images/itachi.jpg);
+  background-image: url(../images/diseños/picture-estampados.jpg);
 }
 .cat-contain4 {
   background-image: url(../images/diseños/clothes-desing.jpg);
