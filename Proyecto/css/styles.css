@@ -781,6 +781,7 @@ body {
 .text-card-blog {
   padding: 5px;
   text-align: justify;
+  font-weight: 600;
 }
 /* fin cards blog*/
 .slogan {
@@ -1298,4 +1299,23 @@ a {
 .iframe {
   width: 100%;
   height: auto;
+}
+.text-blog-one{ 
+  margin: 0 auto;
+  width: 60%;
+  text-align: justify;
+  margin-bottom: 50px;
+  font-family: Montserrat;
+  font-weight: 600;
+}
+.texto{
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  height: auto;
+}
+/*mod dark light*/
+body.dark {
+  background-color: #1c1c1e;
+  color: #f2f2f7;
 }
