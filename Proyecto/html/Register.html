@@ -39,6 +39,8 @@
               id="name"
               class="user"
               placeholder="Tu nombre"
+              name="usuario"
+              value=""
               required
             />
             <label for="correo" class="label-login">
@@ -49,6 +51,8 @@
               id="correo"
               class="mail"
               placeholder="@gmail.com"
+              name="correo"
+              value=""
               required
             />
             <label for="tlfno" class="label-login"> Teléfono: </label>
@@ -57,6 +61,8 @@
               id="tlfno"
               class="tlfno"
               placeholder="+58 ### #### ####"
+              name="telefono"
+              value=""
               required
             />
             <label for="contraseña" class="label-login"> Contraseña: </label>
@@ -65,9 +71,18 @@
               id="contrasena"
               class="password"
               placeholder="********"
+              name="contraseña"
+              value=""
               required
             />
-            <button class="login">Registrarse</button>
+            <input
+              type="button"
+              class="login"
+              onclick="Register()"
+              target="_parent"
+              value="Registrarse"
+            />
+
             <hr class="hr-login" />
             <h3 class="sub-title-three-login">
               ¿Ya tienes cuenta? -
@@ -84,6 +99,5 @@
         </section>
       </article>
     </main>
-    <script src="../js/login.js"></script>
   </body>
 </html>
