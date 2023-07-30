@@ -46,6 +46,4 @@ function Register() {
   } else {
     console.log("ERROR !!!!");
   }
-
-  console.log(Correo, Contraseña);
 }
