@@ -9,3 +9,11 @@ document
     boton.classList.toggle("mostrando");
     icono.classList.toggle("rotar");
   });
+
+const switchButton = document.getElementById("switch");
+const workContainer = document.getElementById("work");
+
+switchButton.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+  switchButton.classList.toggle("active");
+});

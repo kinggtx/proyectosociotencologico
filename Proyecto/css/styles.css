@@ -194,6 +194,12 @@ blockquote {
   width: 0;
   height: 0;
 }
+
+body.dark-mode {
+  background-color: #131314;
+  color: #fff;
+}
+
 /******************** Utilities   ************************/
 /*Tipo bosstrap, atributtos, Animaciones y propiedades*/
 .h2-title {
