@@ -998,7 +998,12 @@
     width: auto;
     justify-content: space-between;
   }
-
+  .slogan{
+    font-size: 1.5rem;
+  }
+  .card{
+    margin-bottom: 50px;
+  }
   /* Estilizar el Contenedor del menú */
   #menu-hamburguesa {
     position: fixed;
