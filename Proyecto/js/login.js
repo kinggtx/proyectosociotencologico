@@ -40,6 +40,7 @@ function Register() {
 
   if (flag === true) {
     console.log("Login EXITOSO!!!");
+    window.location = "../html/login.html";
     localStorage.setItem("Correo", Correo);
     localStorage.setItem("Contraseña", Contraseña);
   } else {
