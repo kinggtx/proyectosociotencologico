@@ -332,6 +332,12 @@ body {
   transform: scale(1.1);
   transition: 300ms ease-in;
 }
+#login-state {
+  display: none;
+}
+#login-state.login_exitoso {
+  display: initial;
+}
 .m-1rem {
   margin: 1rem;
 }
