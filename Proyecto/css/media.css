@@ -303,6 +303,28 @@
     background-color: #820000;
     color: #fff;
   }
+
+  body.dark-mode {
+    .main-section {
+      text-align: center;
+      width: 10rem;
+      height: auto;
+      padding: 1rem;
+      margin: 1rem;
+      justify-content: center;
+      background-color: #fff1fd;
+      border-radius: 10px;
+      display: inline-block;
+    }
+    .main-section a {
+      color: #000;
+    }
+    .main-section:hover,
+    .main-section:hover a {
+      background-color: #820000;
+      color: #fff;
+    }
+  }
 }
 @media screen and (max-width: 968px) {
   /* Estilos Categorías */
@@ -732,7 +754,7 @@
     margin-right: 0;
   }
 
-  /* Estilizar los elementos del menú */  
+  /* Estilizar los elementos del menú */
   .link {
     display: flex;
     align-items: center;
@@ -1449,7 +1471,7 @@
   }
   .main {
     width: 100%;
-    height: 450px;
+    height: 540px;
   }
   .tam {
     width: 45px;
@@ -1459,6 +1481,13 @@
     width: 8rem;
     height: auto;
     padding: 0.6rem;
+  }
+  body.dark-mode {
+    .main-section {
+      width: 8rem;
+      height: auto;
+      padding: 0.6rem;
+    }
   }
   .slogan > article > h2 {
     font-size: 2rem;
