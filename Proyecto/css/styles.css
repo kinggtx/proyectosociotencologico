@@ -220,6 +220,21 @@ body.dark-mode {
   .card-desing-download-svg svg {
     fill: #fff;
   }
+  .button-login {
+    color: white;
+    background-color: transparent;
+  }
+  .link{
+    background-color: transparent;
+    color: white;
+  }
+  .mostrando>a:hover{
+    background-color: #474747;
+    color: white;
+  }
+  .main-section>a{
+    color: var(--color-dark);
+  }
 }
 /******************** Utilities   ************************/
 /*Tipo bosstrap, atributtos, Animaciones y propiedades*/
@@ -349,13 +364,13 @@ body {
   border-radius: 20px;
   font-family: montserrat;
   color: var(--color-four);
-  background-color: #fff1ff;
+  background-color: #FFF;
   cursor: pointer;
   transition: background-color 300ms ease-in;
 }
 .button-login:hover {
-  color: var(--color-one);
-  background-color: #820000;
+  color: black;
+  background-color: #FFF;
   transform: scale(1.1);
   transition: 300ms ease-in;
 }
