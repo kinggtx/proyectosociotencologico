@@ -6,24 +6,9 @@ let i = 1;
 Correos[0] = "creativa.uno@gmail.com";
 Contraseñas[0] = "1234";
 
-function eliminar() {
-  const button = document.getElementById("eliminate");
-  button.parentNode.removeChild(button);
-  console.log("cambio aplicado");
-  localStorage.setItem("removeButton", true);
-}
-
-let login = localStorage.getItem("login");
-
-if (login === true) {
-  console.log("Login Exitoso!!!");
-} else {
-  console.log("Login Fallido!!!");
-  eliminar();
-}
-
 function Login() {
   flag = false;
+  let login = false;
 
   let correo = document.login.correo.value;
   let password = document.login.contraseña.value;
