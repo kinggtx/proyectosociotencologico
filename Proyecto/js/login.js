@@ -8,7 +8,6 @@ Contraseñas[0] = "1234";
 
 function Login() {
   flag = false;
-  let login = false;
 
   let correo = document.login.correo.value;
   let password = document.login.contraseña.value;
