@@ -24,7 +24,7 @@
   --color-three: #eac500;
   --color-four: #000000;
   --color-five: #820000;
-  --color-dark:#131314;
+  --color-dark: #131314;
   --bg-color: #fff1fd;
 
   --Montserrat-ExtBold: montserrat-extrabold;
@@ -199,23 +199,26 @@ blockquote {
 body.dark-mode {
   background-color: var(--color-dark);
   color: #fff;
-  .main-section>a{
+  .main-section > a {
     color: white;
   }
-  .main-section:hover{
+  .main-section:hover {
     background-color: #474747;
   }
-  .card-modify{
+  .card-modify {
     background-color: var(--color-dark);
   }
-  .title-sec2{
+  .title-sec2 {
     color: white;
   }
-  .efecto{
+  .efecto {
     color: white;
   }
-  .efecto>span{ 
+  .efecto > span {
     background-color: var(--color-dark);
+  }
+  .card-desing-download-svg svg {
+    fill: #fff;
   }
 }
 /******************** Utilities   ************************/
@@ -355,12 +358,6 @@ body {
   background-color: #820000;
   transform: scale(1.1);
   transition: 300ms ease-in;
-}
-#login-state {
-  display: none;
-}
-#login-state.login_exitoso {
-  display: initial;
 }
 .m-1rem {
   margin: 1rem;
@@ -1318,22 +1315,22 @@ a {
   width: 100%;
   height: auto;
 }
-.text-blog-one{ 
+.text-blog-one {
   margin: 0 auto;
   width: 60%;
   text-align: justify;
-  margin-bottom: 50px;
+  margin-top: 5rem;
   font-family: Montserrat;
   font-weight: 600;
+  font-size: 1.17rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-left: 10px groove var(--color-five);
+  border-right: 10px groove var(--color-five);
 }
-.texto{
+.texto {
   display: flex;
   flex-wrap: wrap;
   width: auto;
   height: auto;
-}
-/*mod dark light*/
-body.dark {
-  background-color: #1c1c1e;
-  color: #f2f2f7;
 }
