@@ -24,7 +24,9 @@
   --color-three: #eac500;
   --color-four: #000000;
   --color-five: #820000;
+  --color-dark:#131314;
   --bg-color: #fff1fd;
+
   --Montserrat-ExtBold: montserrat-extrabold;
   --Montserrat-SemBold: montserrat-semibold;
   --Montserrat: montserrat;
@@ -194,12 +196,28 @@ blockquote {
   width: 0;
   height: 0;
 }
-
 body.dark-mode {
-  background-color: #131314;
+  background-color: var(--color-dark);
   color: #fff;
+  .main-section>a{
+    color: white;
+  }
+  .main-section:hover{
+    background-color: #474747;
+  }
+  .card-modify{
+    background-color: var(--color-dark);
+  }
+  .title-sec2{
+    color: white;
+  }
+  .efecto{
+    color: white;
+  }
+  .efecto>span{ 
+    background-color: var(--color-dark);
+  }
 }
-
 /******************** Utilities   ************************/
 /*Tipo bosstrap, atributtos, Animaciones y propiedades*/
 .h2-title {
