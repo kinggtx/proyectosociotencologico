@@ -732,8 +732,7 @@
     margin-right: 0;
   }
 
-  /* Estilizar los elementos del menú */
-
+  /* Estilizar los elementos del menú */  
   .link {
     display: flex;
     align-items: center;
