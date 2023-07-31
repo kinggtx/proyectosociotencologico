@@ -161,7 +161,7 @@
   .categorias {
     margin: 0 auto 5rem;
     width: 75%;
-    height: 100vh;
+    height: auto;
     display: flex;
     padding: 10px;
   }
@@ -194,6 +194,7 @@
   /* estilos Desing-card*/
   .cat-768px {
     width: 100%;
+    height: auto;
   }
 
   .desing-card {
@@ -317,7 +318,7 @@
       display: inline-block;
     }
     .main-section a {
-      color: #FFF;
+      color: #fff;
     }
     .main-section:hover,
     .main-section:hover a {
@@ -332,6 +333,7 @@
   /* estilos Desing-card*/
   .cat-768px {
     width: 100%;
+    height: auto;
   }
 
   .desing-card {
@@ -450,6 +452,10 @@
   .text-blog-one {
     width: 80%;
     font-size: 1rem;
+  }
+  .cat-768px {
+    width: 100%;
+    height: auto;
   }
 }
 @media screen and (max-width: 768px) {
