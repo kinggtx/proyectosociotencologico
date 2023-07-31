@@ -312,12 +312,12 @@
       padding: 1rem;
       margin: 1rem;
       justify-content: center;
-      background-color: #fff1fd;
+      background-color: #4d4d4d;
       border-radius: 10px;
       display: inline-block;
     }
     .main-section a {
-      color: #000;
+      color: #FFF;
     }
     .main-section:hover,
     .main-section:hover a {
