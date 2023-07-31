@@ -197,13 +197,17 @@ blockquote {
   height: 0;
 }
 body.dark-mode {
-  background-color: var(--color-dark);
-  color: #fff;
-  .main-section > a {
+    background-color: var(--color-dark);
     color: white;
+  .main-section>a{
+    color: #FFF;
   }
   .main-section:hover {
     background-color: #474747;
+    color: #FFF;
+  }
+  .main>section>a{
+    color: white;
   }
   .card-modify {
     background-color: var(--color-dark);
