@@ -6,12 +6,25 @@ let i = 1;
 Correos[0] = "creativa.uno@gmail.com";
 Contraseñas[0] = "1234";
 
+function eliminar() {
+  const button = document.getElementById("eliminate");
+  button.parentNode.removeChild(button);
+  console.log("cambio aplicado");
+  localStorage.setItem("removeButton", true);
+}
 
+let login = localStorage.getItem("login");
 
+if (login === true) {
+  console.log("Login Exitoso!!!");
+} else {
+  console.log("Login Fallido!!!");
+  eliminar();
+}
 
 function Login() {
   flag = false;
-  
+
   let correo = document.login.correo.value;
   let password = document.login.contraseña.value;
 
@@ -24,6 +37,7 @@ function Login() {
   if (correo === email && password === contraseña) {
     flag = true;
   }
+
   if (flag === true) {
     console.log("Login EXITOSO!!!");
     window.location = "../html/index.html";
@@ -31,13 +45,6 @@ function Login() {
     console.log("ERROR !!!!");
   }
 }
-function eliminar() {  
-  const button = document.getElementById("eliminate");
-  button.parentNode.removeChild(button);
-  console.log("cambio aplicado");
-  localStorage.setItem("removeButton", true);
-} 
-//  eliminar();
 
 function Register() {
   flag = false;
